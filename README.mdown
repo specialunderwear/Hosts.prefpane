@@ -1,3 +1,13 @@
+Hosts, a system preference pane to manage your hosts file.
+----------------------------------------------------------
+
+Hosts add a preference pane to your system preferences which lets you toggle your
+host file entries on and off, as well as add and remove them.
+
+![](https://github.com/specialunderwear/Hosts.prefpane/raw/master/screenshots/locked.png)
+![](https://github.com/specialunderwear/Hosts.prefpane/raw/master/screenshots/edit.png)
+
+Licence:
 
     Hosts, a system preference pane to manage your hosts file.
     Copyright (C) 2011  PermanentMarkers
@@ -16,6 +26,4 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     contact maintainer at hosts@permanentmarkers.nl
-
-Hosts add a preference pane to your system preferences which lets you toggle your
-host file entries on and off, as well as add and remove them.
+    
