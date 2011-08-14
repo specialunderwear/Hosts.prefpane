@@ -4,8 +4,8 @@ Hosts, a system preference pane to manage your hosts file.
 Hosts add a preference pane to your system preferences which lets you toggle your
 host file entries on and off, as well as add and remove them.
 
-Hosts.prefpane likes to keep your hosts file clean. When an antry is toggled off,
-it is not commented out in the hosts file, but instead stored in the apps
+Hosts.prefpane likes to keep your hosts file clean. When an entry is toggled off,
+it is not commented out in the hosts file, but instead stored in the app's
 preferences storage. This means you will have to uncomment all your unused host
 entries and untoggle them in the prefpane if you want to use them. Comments are
 treated as comments and will never show up in the list of host entries!
