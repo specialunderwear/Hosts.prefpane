@@ -1,0 +1,767 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		256AC3DA0F4B6AC300CF3369 /* HostsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* HostsAppDelegate.m */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		DA0AEF6A13A042FC008B8220 /* NLPERMANENTMARKERSHOSTSFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0AEF6813A042FC008B8220 /* NLPERMANENTMARKERSHOSTSFileModel.m */; };
+		DA0AEF6F13A043A1008B8220 /* NLPERMANENTMARKERSHOSTSParserCallbacks.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0AEF6E13A043A1008B8220 /* NLPERMANENTMARKERSHOSTSParserCallbacks.m */; };
+		DA0AEF7413A04C05008B8220 /* NLPERMANENTMARKERSHOSTSFileWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0AEF7213A04C05008B8220 /* NLPERMANENTMARKERSHOSTSFileWriter.m */; };
+		DA0AEF7913A05D1B008B8220 /* NLPERMANENTMARKERSHOSTSAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0AEF7713A05D1B008B8220 /* NLPERMANENTMARKERSHOSTSAuthorization.m */; };
+		DA107B43132D59B800926ADA /* NLPERMANENTMARKERSHOSTSHostEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = DA107B42132D59B800926ADA /* NLPERMANENTMARKERSHOSTSHostEntry.m */; };
+		DA335E9F13B1609900BA1103 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = DA335E9E13B1609900BA1103 /* icon.icns */; };
+		DA335EA113B1638000BA1103 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA335EA013B1638000BA1103 /* IOKit.framework */; };
+		DA5C7BF6138CBC1B00FC0898 /* NLPERMANENTMARKERSHOSTSListController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5C7BF5138CBC1B00FC0898 /* NLPERMANENTMARKERSHOSTSListController.m */; };
+		DA8CA616131EFC7A0084573A /* hostsparser.o in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8CA615131EFC7A0084573A /* hostsparser.o */; };
+		DA99953013A60A72007F78D1 /* PMModalDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA99952F13A60A72007F78D1 /* PMModalDelegate.m */; };
+		DA99953113A6CA9F007F78D1 /* PMModalDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA99952F13A60A72007F78D1 /* PMModalDelegate.m */; };
+		DA9BB05A13B3C3B900CA22E6 /* 32x32.tiff in Resources */ = {isa = PBXBuildFile; fileRef = DA9BB05913B3C3B900CA22E6 /* 32x32.tiff */; };
+		DAC1105513A4A0DB0078E3B5 /* NLPERMANENTMARKERSHOSTSAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC1105413A4A0DB0078E3B5 /* NLPERMANENTMARKERSHOSTSAppController.m */; };
+		DAC1105E13A4A75D0078E3B5 /* PreferencePanes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0AEF4D13A03834008B8220 /* PreferencePanes.framework */; };
+		DAC1106413A4A75D0078E3B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAC1106213A4A75D0078E3B5 /* InfoPlist.strings */; };
+		DAC1106713A4A75D0078E3B5 /* HostsPrefpane.h in Headers */ = {isa = PBXBuildFile; fileRef = DAC1106613A4A75D0078E3B5 /* HostsPrefpane.h */; };
+		DAC1106913A4A75D0078E3B5 /* HostsPrefpane.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC1106813A4A75D0078E3B5 /* HostsPrefpane.m */; };
+		DAC1106E13A4A75D0078E3B5 /* HostsPrefpane.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC1106C13A4A75D0078E3B5 /* HostsPrefpane.xib */; };
+		DAC1107213A4D67D0078E3B5 /* NLPERMANENTMARKERSHOSTSParserCallbacks.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0AEF6E13A043A1008B8220 /* NLPERMANENTMARKERSHOSTSParserCallbacks.m */; };
+		DAC1107313A4D67D0078E3B5 /* NLPERMANENTMARKERSHOSTSFileWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0AEF7213A04C05008B8220 /* NLPERMANENTMARKERSHOSTSFileWriter.m */; };
+		DAC1107413A4D67D0078E3B5 /* NLPERMANENTMARKERSHOSTSAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0AEF7713A05D1B008B8220 /* NLPERMANENTMARKERSHOSTSAuthorization.m */; };
+		DAC1107513A4D67D0078E3B5 /* NLPERMANENTMARKERSHOSTSAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC1105413A4A0DB0078E3B5 /* NLPERMANENTMARKERSHOSTSAppController.m */; };
+		DAC1107613A4D67D0078E3B5 /* NLPERMANENTMARKERSHOSTSListController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5C7BF5138CBC1B00FC0898 /* NLPERMANENTMARKERSHOSTSListController.m */; };
+		DAC1107713A4D67D0078E3B5 /* NLPERMANENTMARKERSHOSTSFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0AEF6813A042FC008B8220 /* NLPERMANENTMARKERSHOSTSFileModel.m */; };
+		DAC1107813A4D67D0078E3B5 /* NLPERMANENTMARKERSHOSTSHostEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = DA107B42132D59B800926ADA /* NLPERMANENTMARKERSHOSTSHostEntry.m */; };
+		DAC1107C13A4D6D90078E3B5 /* hostsparser.o in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC1107B13A4D6D90078E3B5 /* hostsparser.o */; };
+		DAC1108013A4D6F10078E3B5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC1107D13A4D6F10078E3B5 /* Security.framework */; };
+		DAC1108113A4D6F10078E3B5 /* SecurityFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC1107E13A4D6F10078E3B5 /* SecurityFoundation.framework */; };
+		DAC1108213A4D6F10078E3B5 /* SecurityInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC1107F13A4D6F10078E3B5 /* SecurityInterface.framework */; };
+		DAE30CE613F87A6F0068E007 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		DAE30CE713F87AC60068E007 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC1107D13A4D6F10078E3B5 /* Security.framework */; };
+		DAE30CE813F87AC60068E007 /* SecurityFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC1107E13A4D6F10078E3B5 /* SecurityFoundation.framework */; };
+		DAE30CE913F87AC60068E007 /* SecurityInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC1107F13A4D6F10078E3B5 /* SecurityInterface.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA8CA611131EFC210084573A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA8CA5FF131EFABF0084573A;
+			remoteInfo = parser;
+		};
+		DAC1107913A4D6BC0078E3B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA8CA5FF131EFABF0084573A;
+			remoteInfo = parser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		256AC3D80F4B6AC300CF3369 /* HostsAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostsAppDelegate.h; sourceTree = "<group>"; };
+		256AC3D90F4B6AC300CF3369 /* HostsAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostsAppDelegate.m; sourceTree = "<group>"; };
+		256AC3F00F4B6AF500CF3369 /* Hosts_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hosts_Prefix.pch; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		8D1107310486CEB800E47090 /* Hosts-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Hosts-Info.plist"; sourceTree = "<group>"; };
+		DA0AEF4D13A03834008B8220 /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = System/Library/Frameworks/PreferencePanes.framework; sourceTree = SDKROOT; };
+		DA0AEF6713A042FC008B8220 /* NLPERMANENTMARKERSHOSTSFileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NLPERMANENTMARKERSHOSTSFileModel.h; path = models/NLPERMANENTMARKERSHOSTSFileModel.h; sourceTree = "<group>"; };
+		DA0AEF6813A042FC008B8220 /* NLPERMANENTMARKERSHOSTSFileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NLPERMANENTMARKERSHOSTSFileModel.m; path = models/NLPERMANENTMARKERSHOSTSFileModel.m; sourceTree = "<group>"; };
+		DA0AEF6C13A04396008B8220 /* NLPERMANENTMARKERSHOSTSParserCallbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLPERMANENTMARKERSHOSTSParserCallbacks.h; sourceTree = "<group>"; };
+		DA0AEF6E13A043A1008B8220 /* NLPERMANENTMARKERSHOSTSParserCallbacks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLPERMANENTMARKERSHOSTSParserCallbacks.m; sourceTree = "<group>"; };
+		DA0AEF7013A047E1008B8220 /* NLPERMANENTMARKERSHOSTSConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLPERMANENTMARKERSHOSTSConstants.h; sourceTree = "<group>"; };
+		DA0AEF7113A04C05008B8220 /* NLPERMANENTMARKERSHOSTSFileWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLPERMANENTMARKERSHOSTSFileWriter.h; sourceTree = "<group>"; };
+		DA0AEF7213A04C05008B8220 /* NLPERMANENTMARKERSHOSTSFileWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLPERMANENTMARKERSHOSTSFileWriter.m; sourceTree = "<group>"; };
+		DA0AEF7613A05D1B008B8220 /* NLPERMANENTMARKERSHOSTSAuthorization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLPERMANENTMARKERSHOSTSAuthorization.h; sourceTree = "<group>"; };
+		DA0AEF7713A05D1B008B8220 /* NLPERMANENTMARKERSHOSTSAuthorization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLPERMANENTMARKERSHOSTSAuthorization.m; sourceTree = "<group>"; };
+		DA107B41132D59B800926ADA /* NLPERMANENTMARKERSHOSTSHostEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NLPERMANENTMARKERSHOSTSHostEntry.h; path = models/NLPERMANENTMARKERSHOSTSHostEntry.h; sourceTree = "<group>"; };
+		DA107B42132D59B800926ADA /* NLPERMANENTMARKERSHOSTSHostEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NLPERMANENTMARKERSHOSTSHostEntry.m; path = models/NLPERMANENTMARKERSHOSTSHostEntry.m; sourceTree = "<group>"; };
+		DA335E9E13B1609900BA1103 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		DA335EA013B1638000BA1103 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		DA5C7BF4138CBC1B00FC0898 /* NLPERMANENTMARKERSHOSTSListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLPERMANENTMARKERSHOSTSListController.h; sourceTree = "<group>"; };
+		DA5C7BF5138CBC1B00FC0898 /* NLPERMANENTMARKERSHOSTSListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLPERMANENTMARKERSHOSTSListController.m; sourceTree = "<group>"; };
+		DA8CA5EA131EFA040084573A /* hosts.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hosts.c; sourceTree = "<group>"; };
+		DA8CA5EB131EFA040084573A /* hosts.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = hosts.h; sourceTree = "<group>"; };
+		DA8CA5EC131EFA040084573A /* hosts.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hosts.txt; sourceTree = "<group>"; };
+		DA8CA5ED131EFA040084573A /* hostsparser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hostsparser.h; sourceTree = "<group>"; };
+		DA8CA5EE131EFA040084573A /* hostsparser.y */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.yacc; path = hostsparser.y; sourceTree = "<group>"; };
+		DA8CA5EF131EFA040084573A /* hostsparser.yy */ = {isa = PBXFileReference; explicitFileType = sourcecode.lex; fileEncoding = 4; path = hostsparser.yy; sourceTree = "<group>"; };
+		DA8CA5F0131EFA040084573A /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		DA8CA5F1131EFA040084573A /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		DA8CA615131EFC7A0084573A /* hostsparser.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = hostsparser.o; path = /Users/ebone/Projects/Hosts/c/parser/hostsparser.o; sourceTree = "<absolute>"; };
+		DA99952B13A4DC2A007F78D1 /* Hosts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hosts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA99952D13A4DC2A007F78D1 /* Hosts.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Hosts.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA99952E13A60A72007F78D1 /* PMModalDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMModalDelegate.h; sourceTree = "<group>"; };
+		DA99952F13A60A72007F78D1 /* PMModalDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMModalDelegate.m; sourceTree = "<group>"; };
+		DA9BB05913B3C3B900CA22E6 /* 32x32.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = 32x32.tiff; path = HostsPrefpane/32x32.tiff; sourceTree = SOURCE_ROOT; };
+		DAC1105313A4A0DB0078E3B5 /* NLPERMANENTMARKERSHOSTSAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLPERMANENTMARKERSHOSTSAppController.h; sourceTree = "<group>"; };
+		DAC1105413A4A0DB0078E3B5 /* NLPERMANENTMARKERSHOSTSAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLPERMANENTMARKERSHOSTSAppController.m; sourceTree = "<group>"; };
+		DAC1106113A4A75D0078E3B5 /* HostsPrefpane-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HostsPrefpane-Info.plist"; sourceTree = "<group>"; };
+		DAC1106313A4A75D0078E3B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DAC1106513A4A75D0078E3B5 /* HostsPrefpane-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HostsPrefpane-Prefix.pch"; sourceTree = "<group>"; };
+		DAC1106613A4A75D0078E3B5 /* HostsPrefpane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HostsPrefpane.h; sourceTree = "<group>"; };
+		DAC1106813A4A75D0078E3B5 /* HostsPrefpane.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HostsPrefpane.m; sourceTree = "<group>"; };
+		DAC1106A13A4A75D0078E3B5 /* HostsPrefpane.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = HostsPrefpane.tiff; sourceTree = "<group>"; };
+		DAC1106D13A4A75D0078E3B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HostsPrefpane.xib; sourceTree = "<group>"; };
+		DAC1107B13A4D6D90078E3B5 /* hostsparser.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = hostsparser.o; path = c/parser/hostsparser.o; sourceTree = "<group>"; };
+		DAC1107D13A4D6F10078E3B5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DAC1107E13A4D6F10078E3B5 /* SecurityFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SecurityFoundation.framework; path = System/Library/Frameworks/SecurityFoundation.framework; sourceTree = SDKROOT; };
+		DAC1107F13A4D6F10078E3B5 /* SecurityInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SecurityInterface.framework; path = System/Library/Frameworks/SecurityInterface.framework; sourceTree = SDKROOT; };
+		DADC9DC7139B432A00C6F467 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA335EA113B1638000BA1103 /* IOKit.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				DAE30CE713F87AC60068E007 /* Security.framework in Frameworks */,
+				DAE30CE813F87AC60068E007 /* SecurityFoundation.framework in Frameworks */,
+				DAE30CE913F87AC60068E007 /* SecurityInterface.framework in Frameworks */,
+				DA8CA616131EFC7A0084573A /* hostsparser.o in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC1105713A4A75D0078E3B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAE30CE613F87A6F0068E007 /* Cocoa.framework in Frameworks */,
+				DAC1108013A4D6F10078E3B5 /* Security.framework in Frameworks */,
+				DAC1108113A4D6F10078E3B5 /* SecurityFoundation.framework in Frameworks */,
+				DAC1108213A4D6F10078E3B5 /* SecurityInterface.framework in Frameworks */,
+				DAC1105E13A4A75D0078E3B5 /* PreferencePanes.framework in Frameworks */,
+				DAC1107C13A4D6D90078E3B5 /* hostsparser.o in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DA838D2613A1FF6300D008B9 /* c */,
+				DA838D2813A1FFDD00D008B9 /* pm */,
+				256AC3D80F4B6AC300CF3369 /* HostsAppDelegate.h */,
+				256AC3D90F4B6AC300CF3369 /* HostsAppDelegate.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA0AEF4D13A03834008B8220 /* PreferencePanes.framework */,
+				DA335EA013B1638000BA1103 /* IOKit.framework */,
+				DAC1107D13A4D6F10078E3B5 /* Security.framework */,
+				DAC1107E13A4D6F10078E3B5 /* SecurityFoundation.framework */,
+				DAC1107F13A4D6F10078E3B5 /* SecurityInterface.framework */,
+				DAC1107B13A4D6D90078E3B5 /* hostsparser.o */,
+				DADC9DC7139B432A00C6F467 /* CoreFoundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA99952B13A4DC2A007F78D1 /* Hosts.app */,
+				DA99952D13A4DC2A007F78D1 /* Hosts.prefPane */,
+			);
+			name = Products;
+			sourceTree = SOURCE_ROOT;
+		};
+		29B97314FDCFA39411CA2CEA /* Hosts */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				DAC1105F13A4A75D0078E3B5 /* HostsPrefpane */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				DA8CA615131EFC7A0084573A /* hostsparser.o */,
+			);
+			name = Hosts;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				256AC3F00F4B6AF500CF3369 /* Hosts_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DA335E9E13B1609900BA1103 /* icon.icns */,
+				8D1107310486CEB800E47090 /* Hosts-Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA838D2613A1FF6300D008B9 /* c */ = {
+			isa = PBXGroup;
+			children = (
+				DA8CA5E9131EFA040084573A /* parser */,
+			);
+			path = c;
+			sourceTree = "<group>";
+		};
+		DA838D2813A1FFDD00D008B9 /* pm */ = {
+			isa = PBXGroup;
+			children = (
+				DA0AEF7013A047E1008B8220 /* NLPERMANENTMARKERSHOSTSConstants.h */,
+				DA838D2C13A200A600D008B9 /* utils */,
+				DA838D2B13A2008700D008B9 /* auth */,
+				DA838D2A13A1FFFB00D008B9 /* controllers */,
+				DA838D2913A1FFF000D008B9 /* models */,
+			);
+			path = pm;
+			sourceTree = "<group>";
+		};
+		DA838D2913A1FFF000D008B9 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				DA0AEF6713A042FC008B8220 /* NLPERMANENTMARKERSHOSTSFileModel.h */,
+				DA0AEF6813A042FC008B8220 /* NLPERMANENTMARKERSHOSTSFileModel.m */,
+				DA107B41132D59B800926ADA /* NLPERMANENTMARKERSHOSTSHostEntry.h */,
+				DA107B42132D59B800926ADA /* NLPERMANENTMARKERSHOSTSHostEntry.m */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		DA838D2A13A1FFFB00D008B9 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DAC1105313A4A0DB0078E3B5 /* NLPERMANENTMARKERSHOSTSAppController.h */,
+				DAC1105413A4A0DB0078E3B5 /* NLPERMANENTMARKERSHOSTSAppController.m */,
+				DA5C7BF4138CBC1B00FC0898 /* NLPERMANENTMARKERSHOSTSListController.h */,
+				DA5C7BF5138CBC1B00FC0898 /* NLPERMANENTMARKERSHOSTSListController.m */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		DA838D2B13A2008700D008B9 /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				DA0AEF7613A05D1B008B8220 /* NLPERMANENTMARKERSHOSTSAuthorization.h */,
+				DA0AEF7713A05D1B008B8220 /* NLPERMANENTMARKERSHOSTSAuthorization.m */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
+		DA838D2C13A200A600D008B9 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				DA0AEF6C13A04396008B8220 /* NLPERMANENTMARKERSHOSTSParserCallbacks.h */,
+				DA0AEF6E13A043A1008B8220 /* NLPERMANENTMARKERSHOSTSParserCallbacks.m */,
+				DA0AEF7113A04C05008B8220 /* NLPERMANENTMARKERSHOSTSFileWriter.h */,
+				DA0AEF7213A04C05008B8220 /* NLPERMANENTMARKERSHOSTSFileWriter.m */,
+				DA99952E13A60A72007F78D1 /* PMModalDelegate.h */,
+				DA99952F13A60A72007F78D1 /* PMModalDelegate.m */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		DA8CA5E9131EFA040084573A /* parser */ = {
+			isa = PBXGroup;
+			children = (
+				DA8CA5EA131EFA040084573A /* hosts.c */,
+				DA8CA5EB131EFA040084573A /* hosts.h */,
+				DA8CA5EC131EFA040084573A /* hosts.txt */,
+				DA8CA5ED131EFA040084573A /* hostsparser.h */,
+				DA8CA5EE131EFA040084573A /* hostsparser.y */,
+				DA8CA5EF131EFA040084573A /* hostsparser.yy */,
+				DA8CA5F0131EFA040084573A /* main.c */,
+				DA8CA5F1131EFA040084573A /* Makefile */,
+			);
+			path = parser;
+			sourceTree = "<group>";
+		};
+		DAC1105F13A4A75D0078E3B5 /* HostsPrefpane */ = {
+			isa = PBXGroup;
+			children = (
+				DAC1106613A4A75D0078E3B5 /* HostsPrefpane.h */,
+				DAC1106813A4A75D0078E3B5 /* HostsPrefpane.m */,
+				DAC1106A13A4A75D0078E3B5 /* HostsPrefpane.tiff */,
+				DAC1106C13A4A75D0078E3B5 /* HostsPrefpane.xib */,
+				DAC1106013A4A75D0078E3B5 /* Supporting Files */,
+			);
+			path = HostsPrefpane;
+			sourceTree = "<group>";
+		};
+		DAC1106013A4A75D0078E3B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA9BB05913B3C3B900CA22E6 /* 32x32.tiff */,
+				DAC1106113A4A75D0078E3B5 /* HostsPrefpane-Info.plist */,
+				DAC1106213A4A75D0078E3B5 /* InfoPlist.strings */,
+				DAC1106513A4A75D0078E3B5 /* HostsPrefpane-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DAC1105813A4A75D0078E3B5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC1106713A4A75D0078E3B5 /* HostsPrefpane.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXLegacyTarget section */
+		DA8CA5FF131EFABF0084573A /* parser */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = DA8CA602131EFADD0084573A /* Build configuration list for PBXLegacyTarget "parser" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = c/parser;
+			dependencies = (
+			);
+			name = parser;
+			passBuildSettingsInEnvironment = 1;
+			productName = parser;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* HostsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "HostsApp" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				DA9071BE13B17B8500C7B71A /* ShellScript */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA8CA612131EFC210084573A /* PBXTargetDependency */,
+			);
+			name = HostsApp;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Hosts;
+			productReference = DA99952B13A4DC2A007F78D1 /* Hosts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAC1105B13A4A75D0078E3B5 /* HostsPrefpane */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAC1106F13A4A75D0078E3B5 /* Build configuration list for PBXNativeTarget "HostsPrefpane" */;
+			buildPhases = (
+				DAC1105613A4A75D0078E3B5 /* Sources */,
+				DAC1105713A4A75D0078E3B5 /* Frameworks */,
+				DAC1105813A4A75D0078E3B5 /* Headers */,
+				DAC1105913A4A75D0078E3B5 /* Resources */,
+				DAC1105A13A4A75D0078E3B5 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAC1107A13A4D6BC0078E3B5 /* PBXTargetDependency */,
+			);
+			name = HostsPrefpane;
+			productName = HostsPrefpane;
+			productReference = DA99952D13A4DC2A007F78D1 /* Hosts.prefPane */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Hosts" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Hosts */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA8CA5FF131EFABF0084573A /* parser */,
+				8D1107260486CEB800E47090 /* HostsApp */,
+				DAC1105B13A4A75D0078E3B5 /* HostsPrefpane */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				DA335E9F13B1609900BA1103 /* icon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC1105913A4A75D0078E3B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC1106413A4A75D0078E3B5 /* InfoPlist.strings in Resources */,
+				DAC1106E13A4A75D0078E3B5 /* HostsPrefpane.xib in Resources */,
+				DA9BB05A13B3C3B900CA22E6 /* 32x32.tiff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		DAC1105A13A4A75D0078E3B5 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DA9071BE13B17B8500C7B71A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				256AC3DA0F4B6AC300CF3369 /* HostsAppDelegate.m in Sources */,
+				DA107B43132D59B800926ADA /* NLPERMANENTMARKERSHOSTSHostEntry.m in Sources */,
+				DA5C7BF6138CBC1B00FC0898 /* NLPERMANENTMARKERSHOSTSListController.m in Sources */,
+				DA0AEF6A13A042FC008B8220 /* NLPERMANENTMARKERSHOSTSFileModel.m in Sources */,
+				DA0AEF6F13A043A1008B8220 /* NLPERMANENTMARKERSHOSTSParserCallbacks.m in Sources */,
+				DA0AEF7413A04C05008B8220 /* NLPERMANENTMARKERSHOSTSFileWriter.m in Sources */,
+				DA0AEF7913A05D1B008B8220 /* NLPERMANENTMARKERSHOSTSAuthorization.m in Sources */,
+				DAC1105513A4A0DB0078E3B5 /* NLPERMANENTMARKERSHOSTSAppController.m in Sources */,
+				DA99953013A60A72007F78D1 /* PMModalDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC1105613A4A75D0078E3B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA99953113A6CA9F007F78D1 /* PMModalDelegate.m in Sources */,
+				DAC1107213A4D67D0078E3B5 /* NLPERMANENTMARKERSHOSTSParserCallbacks.m in Sources */,
+				DAC1107313A4D67D0078E3B5 /* NLPERMANENTMARKERSHOSTSFileWriter.m in Sources */,
+				DAC1107413A4D67D0078E3B5 /* NLPERMANENTMARKERSHOSTSAuthorization.m in Sources */,
+				DAC1107513A4D67D0078E3B5 /* NLPERMANENTMARKERSHOSTSAppController.m in Sources */,
+				DAC1107613A4D67D0078E3B5 /* NLPERMANENTMARKERSHOSTSListController.m in Sources */,
+				DAC1107713A4D67D0078E3B5 /* NLPERMANENTMARKERSHOSTSFileModel.m in Sources */,
+				DAC1107813A4D67D0078E3B5 /* NLPERMANENTMARKERSHOSTSHostEntry.m in Sources */,
+				DAC1106913A4A75D0078E3B5 /* HostsPrefpane.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA8CA612131EFC210084573A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA8CA5FF131EFABF0084573A /* parser */;
+			targetProxy = DA8CA611131EFC210084573A /* PBXContainerItemProxy */;
+		};
+		DAC1107A13A4D6BC0078E3B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA8CA5FF131EFABF0084573A /* parser */;
+			targetProxy = DAC1107913A4D6BC0078E3B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		DAC1106213A4A75D0078E3B5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAC1106313A4A75D0078E3B5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DAC1106C13A4A75D0078E3B5 /* HostsPrefpane.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAC1106D13A4A75D0078E3B5 /* en */,
+			);
+			name = HostsPrefpane.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: PermanentMarkers";
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Hosts_Prefix.pch;
+				HEADER_SEARCH_PATHS = $SRCROOT;
+				INFOPLIST_FILE = "Hosts-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = "-lcrypto";
+				PRODUCT_NAME = Hosts;
+				STRIP_INSTALLED_PRODUCT = YES;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: PermanentMarkers";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Hosts_Prefix.pch;
+				HEADER_SEARCH_PATHS = $SRCROOT;
+				INFOPLIST_FILE = "Hosts-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lcrypto";
+				PRODUCT_NAME = Hosts;
+				STRIP_INSTALLED_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CURRENT_PROJECT_VERSION = 0.1;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CURRENT_PROJECT_VERSION = 0.1;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		DA8CA600131EFABF0084573A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ACTION = release;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = parser;
+			};
+			name = Debug;
+		};
+		DA8CA601131EFABF0084573A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ACTION = release;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = parser;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		DAC1107013A4A75D0078E3B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HostsPrefpane/HostsPrefpane-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				HEADER_SEARCH_PATHS = $SRCROOT;
+				INFOPLIST_FILE = "HostsPrefpane/HostsPrefpane-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = Hosts;
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = prefPane;
+			};
+			name = Debug;
+		};
+		DAC1107113A4A75D0078E3B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HostsPrefpane/HostsPrefpane-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				HEADER_SEARCH_PATHS = $SRCROOT;
+				INFOPLIST_FILE = "HostsPrefpane/HostsPrefpane-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Hosts;
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = prefPane;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "HostsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Hosts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA8CA602131EFADD0084573A /* Build configuration list for PBXLegacyTarget "parser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA8CA600131EFABF0084573A /* Debug */,
+				DA8CA601131EFABF0084573A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAC1106F13A4A75D0078E3B5 /* Build configuration list for PBXNativeTarget "HostsPrefpane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC1107013A4A75D0078E3B5 /* Debug */,
+				DAC1107113A4A75D0078E3B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

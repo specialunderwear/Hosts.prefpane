@@ -1,0 +1,12 @@
+#hosts
+127.0.0.1          localhost
+fe80::1	localhost
+fe80::1%lo0	localhost
+::1                 localhost
+
+# lmao
+134.5.5.2         hhh.lol kkk.hai
+# lal kut hoer
+134.5.5.2         myhost.lol bla.hai # noob
+134.5.5.2         Dyhost.lol bla.hai34
+126.4.4.7   localhost hahah #jnkjnkjn

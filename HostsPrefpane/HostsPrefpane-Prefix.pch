@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'HostsPrefpane' target in the 'HostsPrefpane' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
