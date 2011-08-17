@@ -14,8 +14,8 @@ Ofcourse Hosts.prefpane will detect edits you made to the ``/etc/hosts`` directl
 merge them into the listing.
 
 Backups of your hosts file is made in ``~/Library/Application Support/Hosts``.
-The backup or your hosts file from before you started using hosts is called
-*hosts.orig* and each session a backup is made called *hosts.session*.
+The backup or your hosts file from before you started using Hosts.prefpane is
+called *hosts.orig* and each session a backup is made called *hosts.session*.
 
 The default host entries that are needed by the OS are hidden and can not be
 edited using Hosts.prefpane.
