@@ -17,6 +17,9 @@ Backups of your hosts file is made in ``~/Library/Application Support/Hosts``.
 The backup or your hosts file from before you started using hosts is called
 *hosts.orig* and each session a backup is made called *hosts.session*.
 
+The default host entries that are needed by the OS are hidden and can not be
+edited using Hosts.prefpane.
+
 ![](https://github.com/specialunderwear/Hosts.prefpane/raw/master/screenshots/locked.png)
 ![](https://github.com/specialunderwear/Hosts.prefpane/raw/master/screenshots/edit.png)
 
