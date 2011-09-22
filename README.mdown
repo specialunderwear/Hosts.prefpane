@@ -20,6 +20,8 @@ called *hosts.orig* and each session a backup is made called *hosts.session*.
 The default host entries that are needed by the OS are hidden and can not be
 edited using Hosts.prefpane.
 
+Hit the download button in the top right corner to download the installer!
+
 ![](https://github.com/specialunderwear/Hosts.prefpane/raw/master/screenshots/locked.png)
 ![](https://github.com/specialunderwear/Hosts.prefpane/raw/master/screenshots/edit.png)
 
