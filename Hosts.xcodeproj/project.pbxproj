@@ -102,7 +102,7 @@
 		DA8CA5EF131EFA040084573A /* hostsparser.yy */ = {isa = PBXFileReference; explicitFileType = sourcecode.lex; fileEncoding = 4; path = hostsparser.yy; sourceTree = "<group>"; };
 		DA8CA5F0131EFA040084573A /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		DA8CA5F1131EFA040084573A /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		DA8CA615131EFC7A0084573A /* hostsparser.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = hostsparser.o; path = /Users/ebone/Projects/Hosts/c/parser/hostsparser.o; sourceTree = "<absolute>"; };
+		DA8CA615131EFC7A0084573A /* hostsparser.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = hostsparser.o; path = c/parser/hostsparser.o; sourceTree = SOURCE_ROOT; };
 		DA99952B13A4DC2A007F78D1 /* Hosts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hosts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA99952D13A4DC2A007F78D1 /* Hosts.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Hosts.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA99952E13A60A72007F78D1 /* PMModalDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMModalDelegate.h; sourceTree = "<group>"; };
