@@ -15,14 +15,30 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 #    contact maintainer at hosts@permanentmarkers.nl
+ifndef BISON_PATH
+	BISON_PATH := $(shell which bison)
+endif
+BISON_VERSION_GT_2_5 = $(shell $(BISON_PATH) --version | head -n1 | cut -d' '  -f4 | xargs echo "2.5 <= " | bc)
 
-all: libs
+
+
+.PHONY:
+ifneq ($(BISON_VERSION_GT_2_5), 1)
+	@echo `$(BISON_PATH) --version | head -n1`
+	@echo "bison version must be greater then 2.5, make sure bison 2.5 is on your PATH or BISON_PATH is set to the correct bison in the parser's build settings."
+	@false
+else
+	@echo `$(BISON_PATH) --version | head -n1`
+	@echo "HUH LOL $(BISON_VERSION_GT_2_5)"
+endif
+
+all: .PHONY libs
 	gcc -o hosts -g main.c hostsparser.o
 
-libs:
-	/opt/local/bin/bison -d hostsparser.y
+libs: .PHONY
+	$(BISON_PATH) -d hostsparser.y
 	flex --header-file=hostsscanner.h hostsparser.yy
-	/opt/local/bin/bison --report=state hostsparser.y
+	$(BISON_PATH) --report=state hostsparser.y
 	cc -c -g --combine hosts.c lex.NLPERMANENTMARKERSHOSTS.c hostsparser.tab.c -o hostsparser.o
 
 release: clean libs
