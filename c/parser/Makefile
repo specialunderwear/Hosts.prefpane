@@ -36,8 +36,8 @@ libs: .PHONY
 	$(BISON_PATH) -d hostsparser.y
 	flex --header-file=hostsscanner.h hostsparser.yy
 	$(BISON_PATH) --report=state hostsparser.y
-	cc -c -g --combine hosts.c lex.NLPERMANENTMARKERSHOSTS.c hostsparser.tab.c -o hostsparser.o
-
+	cc -c -g hosts.c lex.NLPERMANENTMARKERSHOSTS.c hostsparser.tab.c
+	ld -r hosts.o lex.NLPERMANENTMARKERSHOSTS.o hostsparser.tab.o -o hostsparser.o
 release: clean libs
 	gcc -O3 -o hosts main.c hostsparser.o
 	strip hosts
