@@ -36,7 +36,17 @@
     NSString *fileName = [NSString stringWithFormat:@"hosts.%@", extension];
     folder = [folder stringByAppendingPathComponent: fileName];
     NSLog(@"copying %@ to %@", @PM_HOSTS_FILE_LOCATION, folder);
-    [fileManager copyItemAtPath:@PM_HOSTS_FILE_LOCATION toPath:folder error:nil];
+
+    if ([fileManager fileExistsAtPath:folder]) {
+        NSString *backupPath = [folder stringByAppendingPathExtension:@"bck"];
+        [fileManager moveItemAtPath:folder toPath:backupPath error:nil];
+        [fileManager copyItemAtPath:@PM_HOSTS_FILE_LOCATION toPath:folder error:nil];
+        [fileManager removeItemAtPath:backupPath error:nil];
+    } else {
+        [fileManager copyItemAtPath:@PM_HOSTS_FILE_LOCATION toPath:folder error:nil];
+    }
+    
+    //NSLog(@"Huh an error occurred %@", error);
 }
 
 - (id) initWithAuthorization:(NLPERMANENTMARKERSHOSTSAuthorization *) aNauthorization {
