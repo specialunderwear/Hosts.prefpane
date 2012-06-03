@@ -23,7 +23,7 @@
 #import "pm/utils/NLPERMANENTMARKERSHOSTSFileWriter.h"
 #import "pm/utils/NLPERMANENTMARKERSHOSTSParserCallbacks.h"
 
-// The hosts array, initialized by HostsAppDelegate.initialize
+// The hosts array, initialized by NLPERMANENTMARKERSHOSTSFileModel.initialize
 NSMutableArray * NLPERMANENTMARKERSHOSTShostsEntries;
 
 @implementation NLPERMANENTMARKERSHOSTSFileModel
@@ -100,7 +100,6 @@ NSMutableArray * NLPERMANENTMARKERSHOSTShostsEntries;
 
 - (NSMutableArray *) hosts {
     return NLPERMANENTMARKERSHOSTShostsEntries;
-    return [self mutableArrayValueForKey:@"hosts"];
 }
 
 - (void) setHosts:(NSMutableArray *)hosts {

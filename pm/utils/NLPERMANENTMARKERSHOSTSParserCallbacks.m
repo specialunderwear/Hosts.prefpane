@@ -20,6 +20,7 @@
 #import "pm/utils/NLPERMANENTMARKERSHOSTSParserCallbacks.h"
 #import "pm/models/NLPERMANENTMARKERSHOSTSHostEntry.h"
 
+// defined in NLPERMANENTMARKERSHOSTSFileModel.m
 extern NSMutableArray * NLPERMANENTMARKERSHOSTShostsEntries;
 
 // callback for the hosts file parser.
