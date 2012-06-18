@@ -18,7 +18,7 @@
 ifndef BISON_PATH
 	BISON_PATH := $(shell which bison)
 endif
-BISON_VERSION_GT_2_5 = $(shell $(BISON_PATH) --version | head -n1 | cut -d' '  -f4 | xargs echo "2.5 <= " | bc)
+BISON_VERSION_GT_2_5 = $(shell $(BISON_PATH) --version | head -n1 | cut -d' '  -f4 | cut -c 3 | xargs echo "2.5 <= " | bc)
 
 
 
