@@ -54,7 +54,7 @@ IPV6ADDRESS  ({HEXPART}(":"{IPV4ADDRESS})?)
         return COMMENT;
     }
 
-[A-Za-z]+[^\n#: ]* {
+[A-Za-z0-9]+[^\n#: \t]* {
         yylval->string = strdup(yytext);
         return HOSTNAME;
     }
