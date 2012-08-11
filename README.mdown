@@ -21,7 +21,8 @@ The default host entries that are needed by the OS are hidden and can not be
 edited using Hosts.prefpane.
 
 Click the [downloads link](https://github.com/specialunderwear/Hosts.prefpane/downloads) to download the installer!
-
+Or give us your money: <a href='http://www.pledgie.com/campaigns/18033'><img alt='Click here to lend your support to: Hosts.prefpane and make a donation at www.pledgie.com !' src='http://www.pledgie.com/campaigns/18033.png?skin_name=chrome' border='0' /></a>
+ 
 ![](https://github.com/specialunderwear/Hosts.prefpane/raw/master/screenshots/locked.png)
 ![](https://github.com/specialunderwear/Hosts.prefpane/raw/master/screenshots/edit.png)
 
