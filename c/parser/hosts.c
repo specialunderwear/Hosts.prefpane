@@ -68,7 +68,7 @@ void NLPERMANENTMARKERSHOSTS_chostentry_destroy(NLPERMANENTMARKERSHOSTS_CHostEnt
 int NLPERMANENTMARKERSHOSTS_parsed_value_equals(const char * value, int target) {
     int result = 0;
     yyscan_t scanner;
-    YYSTYPE NLPERMANENTMARKERSHOSTSlval;
+    YYSTYPE NLPERMANENTMARKERSHOSTSlval={};
     NLPERMANENTMARKERSHOSTSlex_init( &scanner );
     YY_BUFFER_STATE handle = NLPERMANENTMARKERSHOSTS_scan_string(value, scanner);
     if (NLPERMANENTMARKERSHOSTSlex(&NLPERMANENTMARKERSHOSTSlval, scanner) == target && strcmp(NLPERMANENTMARKERSHOSTSlval.string, value) == 0) {
