@@ -21,7 +21,7 @@ The default host entries that are needed by the OS are hidden and can not be
 edited using Hosts.prefpane.
 
 Click the [downloads link](https://github.com/specialunderwear/Hosts.prefpane/downloads) to download the installer!
-Or endorse us at coderwall: [![endorse](http://api.coderwall.com/specialunderwear/endorsecount.png)](http://coderwall.com/specialunderwear) 
+Or endorse us at coderwall: [![endorse](http://api.coderwall.com/specialunderwear/endorsecount.png)](http://coderwall.com/specialunderwear).
  
 ![](https://github.com/specialunderwear/Hosts.prefpane/raw/master/screenshots/locked.png)
 ![](https://github.com/specialunderwear/Hosts.prefpane/raw/master/screenshots/edit.png)
