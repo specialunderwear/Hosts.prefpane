@@ -19,6 +19,7 @@
 
 #import "pm/controllers/NLPERMANENTMARKERSHOSTSListController.h"
 #import "pm/models/NLPERMANENTMARKERSHOSTSHostEntry.h"
+#import "pm/NLPERMANENTMARKERSHOSTSConstants.h"
 
 #define PM_HOST_ENTRY_DATA_TYPE @"nl.permanentmarkers.NLPERMANENTMARKERSHOSTSHostEntry"
 
@@ -33,6 +34,7 @@
     self.clearsFilterPredicateOnInsertion = NO;
     NSString * predicate = @"(NOT (hostnames in { '', 'localhost', 'broadcasthost' }) AND (address != '')) OR (comment == NIL)";
     self.filterPredicate = [NSPredicate predicateWithFormat:predicate];
+    disableAllCheckbox.state = [[[NSUserDefaults standardUserDefaults] objectForKey:PMHOSTS_DISABLE_ALL_KEY] intValue];
     return self;
 }
 
@@ -67,6 +69,11 @@
     description = [NSString stringWithFormat:description, [entry toString]];
     NSAlert *alert = [NSAlert alertWithMessageText:title defaultButton:@"Yes" alternateButton:@"No" otherButton:nil informativeTextWithFormat:description];
     [alert beginSheetModalForWindow:[[NSApplication sharedApplication] mainWindow] modalDelegate:self didEndSelector:@selector(alertEnded:code:context:) contextInfo:NULL];
+}
+
+- (IBAction) disableAll:(id)sender {
+    NSLog(@"Changing state %li", [sender state]);
+    [[NSUserDefaults standardUserDefaults] setInteger:[sender state] forKey:PMHOSTS_DISABLE_ALL_KEY];
 }
 
 - (void)alertEnded:(NSAlert *)alert code:(int)aChoice context:(void *) v {
