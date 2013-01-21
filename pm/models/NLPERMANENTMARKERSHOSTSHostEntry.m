@@ -21,7 +21,7 @@
 
 @implementation NLPERMANENTMARKERSHOSTSHostEntry
 
-@synthesize use, address, hostnames, comment;
+@synthesize use, address, hostnames, comment, disabled;
 
 - (id) init {
 	[super init];
@@ -29,6 +29,7 @@
 	address = nil;
 	hostnames = nil;
 	comment = nil;
+    disabled = [NSNumber numberWithBool:NO];
 	return self;
 }
 
@@ -37,7 +38,8 @@
 	address = [NSString alloc];
 	hostnames = [NSString alloc];
 	comment = [NSString alloc];
-	
+	disabled = [NSNumber numberWithBool:NO];
+
 	if (entry->address != NULL) {
 		address = [address initWithCString:entry->address encoding:NSUTF8StringEncoding];
 	} else {
@@ -85,6 +87,7 @@
 	[address release];
 	[hostnames release];
 	[comment release];
+    [disabled release];
 	[super dealloc];
 }
 
@@ -149,6 +152,7 @@
     [aCoder encodeObject:address forKey:@"address"];
     [aCoder encodeObject:hostnames forKey:@"hostnames"];
     [aCoder encodeObject:comment forKey:@"comment"];
+    [aCoder encodeObject:disabled forKey:@"disabled"];
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
@@ -157,6 +161,7 @@
     address = [[aDecoder decodeObjectForKey:@"address"] retain];
     hostnames = [[aDecoder decodeObjectForKey:@"hostnames"] retain];
     comment = [[aDecoder decodeObjectForKey:@"comment"] retain];
+    disabled = [[aDecoder decodeObjectForKey:@"disabled"] retain];
     return self;
 }
 

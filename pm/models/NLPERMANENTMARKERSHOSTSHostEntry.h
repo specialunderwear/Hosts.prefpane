@@ -28,6 +28,7 @@
 	NSString * address;
 	NSString * hostnames;
 	NSString * comment;
+    NSNumber * disabled;
 }
 
 - (id) initWithCHostEntry:(NLPERMANENTMARKERSHOSTS_CHostEntry *)host_entry;
@@ -40,6 +41,7 @@
 @property(readwrite, copy) NSNumber *use;
 @property(readwrite, copy) NSString *address;
 @property(readwrite, copy) NSString *hostnames;
+@property(readwrite, copy) NSNumber *disabled;
 @property(readonly, copy) NSString *comment;
 
 @end
