@@ -21,7 +21,6 @@
 
 @interface NLPERMANENTMARKERSHOSTSListController : NSArrayController {
     IBOutlet NSTableView * tableView;
-    IBOutlet NSButton *disableAllCheckbox;
 }
 
 - (void)insertObject:(id)object afterArrangedObjectIndex:(NSUInteger)index;
@@ -29,7 +28,6 @@
 
 - (IBAction) insertHostEntry: (id)sender;
 - (IBAction) confirmDeleteItem:(id)sender;
-- (IBAction) disableAll:(id)sender;
 
 @property (assign) IBOutlet NSTableView * tableView;
 

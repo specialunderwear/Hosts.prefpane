@@ -18,6 +18,7 @@
 
 #import "pm/controllers/NLPERMANENTMARKERSHOSTSAppController.h"
 #import "pm/NLPERMANENTMARKERSHOSTSConstants.h"
+#import "pm/models/NLPERMANENTMARKERSHOSTSHostEntry.h"
 
 @implementation NLPERMANENTMARKERSHOSTSAppController
 
@@ -34,6 +35,8 @@
     authorization = [[NLPERMANENTMARKERSHOSTSAuthorization alloc] initWithAuthView:authView];
     hostfile.authorization = authorization;
     authView.delegate = self;
+    disableAllCheckbox.state = [[[NSUserDefaults standardUserDefaults] objectForKey:PMHOSTS_DISABLE_ALL_KEY] intValue];
+
     [self willChangeValueForKey:@"authenticated"];
     [self didChangeValueForKey:@"authenticated"];
 }
@@ -55,5 +58,27 @@
 - (BOOL)isAuthenticated{
     return [authView authorizationState] == SFAuthorizationViewUnlockedState;
 }
+
+#pragma mark disable all
+- (IBAction) disableAll:(id)sender {
+    NSLog(@"Changing state %li", [sender state]);
+    @synchronized(sender) {
+        NSString * predicate = @"(NOT (hostnames in { '', 'localhost', 'broadcasthost' }) AND (address != '')) OR (comment == NIL)";
+        NSPredicate *filter = [NSPredicate predicateWithFormat:predicate];
+        NSArray *hosts = [hostfile.hosts filteredArrayUsingPredicate:filter];
+        if (disableAllCheckbox.state == NSOnState) {
+            for (NLPERMANENTMARKERSHOSTSHostEntry *entry in hosts) {
+                entry.disabled = entry.use;
+                entry.use = [NSNumber numberWithInt:NSOffState];
+            }
+        } else {
+            for (NLPERMANENTMARKERSHOSTSHostEntry *entry in hosts) {
+                entry.use = entry.disabled;
+                entry.disabled = [NSNumber numberWithBool:NO];
+            }
+        }
+    }
+}
+
 
 @end

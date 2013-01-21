@@ -25,12 +25,14 @@
 @interface NLPERMANENTMARKERSHOSTSAppController : NSObject {
 //@private
     IBOutlet SFAuthorizationView *authView;
+    IBOutlet NSButton *disableAllCheckbox;
     NLPERMANENTMARKERSHOSTSFileModel *hostfile;
     NLPERMANENTMARKERSHOSTSAuthorization *authorization;
 }
 
 - (BOOL) isAuthenticated;
 - (void) setUp:(NSUndoManager *)undoManager;
+- (IBAction) disableAll:(id)sender;
 
 //@property (assign) IBOutlet PMHostListController *controller;
 @property (assign) IBOutlet NLPERMANENTMARKERSHOSTSFileModel *hostfile;

@@ -602,22 +602,6 @@
 					<int key="connectionID">171</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">disableAll:</string>
-						<reference key="source" ref="849819519"/>
-						<reference key="destination" ref="67906187"/>
-					</object>
-					<int key="connectionID">203</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">disableAllCheckbox</string>
-						<reference key="source" ref="849819519"/>
-						<reference key="destination" ref="67906187"/>
-					</object>
-					<int key="connectionID">204</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">authView</string>
 						<reference key="source" ref="700315187"/>
@@ -632,6 +616,22 @@
 						<reference key="destination" ref="488516129"/>
 					</object>
 					<int key="connectionID">165</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">disableAllCheckbox</string>
+						<reference key="source" ref="700315187"/>
+						<reference key="destination" ref="67906187"/>
+					</object>
+					<int key="connectionID">209</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">disableAll:</string>
+						<reference key="source" ref="700315187"/>
+						<reference key="destination" ref="67906187"/>
+					</object>
+					<int key="connectionID">210</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
@@ -1137,7 +1137,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">208</int>
+			<int key="maxID">210</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1185,16 +1185,29 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">NLPERMANENTMARKERSHOSTSAppController</string>
 					<string key="superclassName">NSObject</string>
+					<object class="NSMutableDictionary" key="actions">
+						<string key="NS.key.0">disableAll:</string>
+						<string key="NS.object.0">id</string>
+					</object>
+					<object class="NSMutableDictionary" key="actionInfosByName">
+						<string key="NS.key.0">disableAll:</string>
+						<object class="IBActionInfo" key="NS.object.0">
+							<string key="name">disableAll:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</object>
 					<object class="NSMutableDictionary" key="outlets">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>authView</string>
+							<string>disableAllCheckbox</string>
 							<string>hostfile</string>
 						</object>
 						<object class="NSArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>SFAuthorizationView</string>
+							<string>NSButton</string>
 							<string>NLPERMANENTMARKERSHOSTSFileModel</string>
 						</object>
 					</object>
@@ -1203,6 +1216,7 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>authView</string>
+							<string>disableAllCheckbox</string>
 							<string>hostfile</string>
 						</object>
 						<object class="NSArray" key="dict.values">
@@ -1210,6 +1224,10 @@
 							<object class="IBToOneOutletInfo">
 								<string key="name">authView</string>
 								<string key="candidateClassName">SFAuthorizationView</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">disableAllCheckbox</string>
+								<string key="candidateClassName">NSButton</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">hostfile</string>
@@ -1249,12 +1267,10 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>confirmDeleteItem:</string>
-							<string>disableAll:</string>
 							<string>insertHostEntry:</string>
 						</object>
 						<object class="NSArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 						</object>
@@ -1264,7 +1280,6 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>confirmDeleteItem:</string>
-							<string>disableAll:</string>
 							<string>insertHostEntry:</string>
 						</object>
 						<object class="NSArray" key="dict.values">
@@ -1274,45 +1289,20 @@
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBActionInfo">
-								<string key="name">disableAll:</string>
-								<string key="candidateClassName">id</string>
-							</object>
-							<object class="IBActionInfo">
 								<string key="name">insertHostEntry:</string>
 								<string key="candidateClassName">id</string>
 							</object>
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="outlets">
-						<bool key="EncodedWithXMLCoder">YES</bool>
-						<object class="NSArray" key="dict.sortedKeys">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>disableAllCheckbox</string>
-							<string>tableView</string>
-						</object>
-						<object class="NSArray" key="dict.values">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>NSButton</string>
-							<string>NSTableView</string>
-						</object>
+						<string key="NS.key.0">tableView</string>
+						<string key="NS.object.0">NSTableView</string>
 					</object>
 					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<bool key="EncodedWithXMLCoder">YES</bool>
-						<object class="NSArray" key="dict.sortedKeys">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>disableAllCheckbox</string>
-							<string>tableView</string>
-						</object>
-						<object class="NSArray" key="dict.values">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBToOneOutletInfo">
-								<string key="name">disableAllCheckbox</string>
-								<string key="candidateClassName">NSButton</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">tableView</string>
-								<string key="candidateClassName">NSTableView</string>
-							</object>
+						<string key="NS.key.0">tableView</string>
+						<object class="IBToOneOutletInfo" key="NS.object.0">
+							<string key="name">tableView</string>
+							<string key="candidateClassName">NSTableView</string>
 						</object>
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
