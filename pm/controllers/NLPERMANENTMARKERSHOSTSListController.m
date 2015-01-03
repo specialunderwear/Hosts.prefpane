@@ -27,12 +27,13 @@
 //@synthesize tableView;
 
 - (id) initWithCoder:(NSCoder *)aDecoder {
-    if (!(self = [super initWithCoder:aDecoder])) return nil;
-    
-    // filter default rules, comments and empty lines.
-    self.clearsFilterPredicateOnInsertion = NO;
-    NSString * predicate = @"(NOT (hostnames in { '', 'localhost', 'broadcasthost' }) AND (address != '')) OR (comment == NIL)";
-    self.filterPredicate = [NSPredicate predicateWithFormat:predicate];
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        // filter default rules, comments and empty lines.
+        self.clearsFilterPredicateOnInsertion = NO;
+        NSString * predicate = @"(NOT (hostnames in { '', 'localhost', 'broadcasthost' }) AND (address != '')) OR (comment == NIL)";
+        self.filterPredicate = [NSPredicate predicateWithFormat:predicate];
+    }
     return self;
 }
 
