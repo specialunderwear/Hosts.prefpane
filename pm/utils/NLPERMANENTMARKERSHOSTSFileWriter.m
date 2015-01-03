@@ -53,7 +53,6 @@
     self = [super init];
     if (self) {
         authorization = aNauthorization;
-        [authorization retain];
     }
     return self;
 }
@@ -77,13 +76,8 @@
     
     [hostsWriter launch];
     [hostsWriter waitUntilExit];
-    [hostsWriter release];
     [[NSProcessInfo processInfo] enableSuddenTermination];
 }
 
-- (void) dealloc {
-    [authorization release];
-    [super dealloc];
-}
 
 @end

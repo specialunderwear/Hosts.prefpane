@@ -39,12 +39,12 @@ extern NSMutableArray * NLPERMANENTMARKERSHOSTShostsEntries;
 - (void) removeObjectFromHostsAtIndex:(NSUInteger) index;
 - (id) objectInHostsAtIndex: (NSUInteger) index;
 - (id) objectInHostsAtIndexes: (NSIndexSet *) range;
-- (void)getHosts:(id *)aBuffer range:(NSRange)aRange;
+- (void)getHosts:(__unsafe_unretained id [])aBuffer range:(NSRange)aRange;
 - (void) insertObject:(id)object inHostsAtIndex:(NSUInteger) index;
 - (NSMutableArray *) hosts;
 - (void) setHosts:(NSMutableArray *)hosts;
 
-@property (retain) NSUndoManager *undoManager;
+@property (strong) NSUndoManager *undoManager;
 //@property (assign) NSMutableArray *hosts;
-@property (retain) NLPERMANENTMARKERSHOSTSAuthorization *authorization;
+@property (strong) NLPERMANENTMARKERSHOSTSAuthorization *authorization;
 @end

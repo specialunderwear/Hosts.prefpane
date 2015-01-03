@@ -29,6 +29,6 @@
 - (IBAction) insertHostEntry: (id)sender;
 - (IBAction) confirmDeleteItem:(id)sender;
 
-@property (assign) IBOutlet NSTableView * tableView;
+@property (strong) IBOutlet NSTableView * tableView;
 
 @end

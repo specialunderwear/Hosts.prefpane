@@ -25,7 +25,7 @@
 @interface NLPERMANENTMARKERSHOSTSAppController : NSObject {
 //@private
     IBOutlet SFAuthorizationView *authView;
-    NLPERMANENTMARKERSHOSTSFileModel *hostfile;
+    NLPERMANENTMARKERSHOSTSFileModel *__strong hostfile;
     NLPERMANENTMARKERSHOSTSAuthorization *authorization;
 }
 
@@ -33,6 +33,6 @@
 - (void) setUp:(NSUndoManager *)undoManager;
 
 //@property (assign) IBOutlet PMHostListController *controller;
-@property (assign) IBOutlet NLPERMANENTMARKERSHOSTSFileModel *hostfile;
+@property (strong) IBOutlet NLPERMANENTMARKERSHOSTSFileModel *hostfile;
 
 @end

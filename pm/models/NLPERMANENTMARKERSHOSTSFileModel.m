@@ -57,7 +57,7 @@ NSMutableArray * NLPERMANENTMARKERSHOSTShostsEntries;
     return [NLPERMANENTMARKERSHOSTShostsEntries objectsAtIndexes:range];
 }
 
-- (void)getHosts:(id *)aBuffer range:(NSRange)aRange {
+- (void)getHosts:(__unsafe_unretained id [])aBuffer range:(NSRange)aRange {
     return [NLPERMANENTMARKERSHOSTShostsEntries getObjects:aBuffer range:aRange];
 }
 
@@ -105,8 +105,6 @@ NSMutableArray * NLPERMANENTMARKERSHOSTShostsEntries;
 - (void) setHosts:(NSMutableArray *)hosts {
     if (! [hosts isEqualTo:NLPERMANENTMARKERSHOSTShostsEntries]) {
         [self willChangeValueForKey:@"hosts"];
-        [hosts retain];
-        [NLPERMANENTMARKERSHOSTShostsEntries release];
         NLPERMANENTMARKERSHOSTShostsEntries = hosts;
         [self didChangeValueForKey:@"hosts"];
         assert(NO);
@@ -249,12 +247,8 @@ NSMutableArray * NLPERMANENTMARKERSHOSTShostsEntries;
 //
 - (void)dealloc
 {
-    [NLPERMANENTMARKERSHOSTShostsEntries release];
-    [undoManager release];
-    [authorization release];
-    [writer release];
+    NLPERMANENTMARKERSHOSTShostsEntries = nil;
     
-    [super dealloc];
 }
 
 @end

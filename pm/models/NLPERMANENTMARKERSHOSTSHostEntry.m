@@ -24,7 +24,7 @@
 @synthesize use, address, hostnames, comment;
 
 - (id) init {
-	[super init];
+	if (!(self = [super init])) return nil;
 	use = [NSNumber numberWithInteger:NSOnState];
 	address = nil;
 	hostnames = nil;
@@ -80,13 +80,6 @@
 
 }
 
-- (void) dealloc {
-	[use release];
-	[address release];
-	[hostnames release];
-	[comment release];
-	[super dealloc];
-}
 
 #pragma mark -
 #pragma mark validation
@@ -152,11 +145,11 @@
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
-    [super init];
-    use = [[aDecoder decodeObjectForKey:@"use"] retain];
-    address = [[aDecoder decodeObjectForKey:@"address"] retain];
-    hostnames = [[aDecoder decodeObjectForKey:@"hostnames"] retain];
-    comment = [[aDecoder decodeObjectForKey:@"comment"] retain];
+    if (!(self = [super init])) return nil;
+    use = [aDecoder decodeObjectForKey:@"use"];
+    address = [aDecoder decodeObjectForKey:@"address"];
+    hostnames = [aDecoder decodeObjectForKey:@"hostnames"];
+    comment = [aDecoder decodeObjectForKey:@"comment"];
     return self;
 }
 

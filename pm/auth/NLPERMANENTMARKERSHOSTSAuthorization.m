@@ -30,7 +30,7 @@
     // store rights dictionary in registeredRights.
     AuthorizationRightGet(PM_AUTHORISED_FILE, &registeredRights);
     
-    NSString * rule = [(NSDictionary *)registeredRights valueForKey:@"comment"];
+    NSString * rule = [(__bridge NSDictionary *)registeredRights valueForKey:@"comment"];
     if ([rule isEqualToString:@PM_AUTHENTICATION_RULE_COMMENT]) {
         NSLog(@"the rule is correct");
     } else {
@@ -39,7 +39,7 @@
         NSArray *values = [NSArray arrayWithObjects:@"user", @PM_AUTHENTICATION_RULE_COMMENT, @"admin", [NSNumber numberWithBool:YES], [NSNumber numberWithInt:300], nil];
         NSDictionary *rightDefinition = [NSDictionary dictionaryWithObjects:values forKeys:keys];
         updateRightsStatus = AuthorizationRightSet(hostsAuthorizationRef, PM_AUTHORISED_FILE,
-                                                   (CFDictionaryRef)rightDefinition,
+                                                   (__bridge CFDictionaryRef)rightDefinition,
                                                    NULL, NULL, NULL);
         if (updateRightsStatus == errAuthorizationSuccess) {
             NSLog(@"i could write the right");

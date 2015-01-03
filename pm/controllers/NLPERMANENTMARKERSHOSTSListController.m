@@ -27,7 +27,7 @@
 //@synthesize tableView;
 
 - (id) initWithCoder:(NSCoder *)aDecoder {
-    [super initWithCoder:aDecoder];
+    if (!(self = [super initWithCoder:aDecoder])) return nil;
     
     // filter default rules, comments and empty lines.
     self.clearsFilterPredicateOnInsertion = NO;
@@ -50,7 +50,6 @@
         at_index++;
     }
     
-    [new_entry release];
     [tableView editColumn:1 row:at_index withEvent:nil select:YES];
 }
 

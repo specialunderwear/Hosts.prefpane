@@ -21,12 +21,12 @@
 
 @interface HostsPrefpane : NSPreferencePane {
 @private
-    NLPERMANENTMARKERSHOSTSAppController * appController;
-    NSWindow *window;
+    NLPERMANENTMARKERSHOSTSAppController * __strong appController;
+    NSWindow *__strong window;
 }
 
 - (void)mainViewDidLoad;
 
-@property (assign) IBOutlet NLPERMANENTMARKERSHOSTSAppController *appController;
-@property (assign) IBOutlet NSWindow *window;
+@property (strong) IBOutlet NLPERMANENTMARKERSHOSTSAppController *appController;
+@property (strong) IBOutlet NSWindow *window;
 @end

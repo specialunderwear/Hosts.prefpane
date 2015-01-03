@@ -27,7 +27,6 @@ extern NSMutableArray * NLPERMANENTMARKERSHOSTShostsEntries;
 void NLPERMANENTMARKERSHOSTSonHostEntryFound(NLPERMANENTMARKERSHOSTS_CHostEntry * entry) {
 	NLPERMANENTMARKERSHOSTSHostEntry * host_entry = [[NLPERMANENTMARKERSHOSTSHostEntry alloc] initWithCHostEntry:entry];
 	[NLPERMANENTMARKERSHOSTShostsEntries addObject:host_entry];
-	[host_entry release];
 	NLPERMANENTMARKERSHOSTS_chostentry_destroy(entry);
 }
 
