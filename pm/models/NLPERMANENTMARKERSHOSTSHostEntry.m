@@ -24,38 +24,42 @@
 @synthesize use, address, hostnames, comment;
 
 - (id) init {
-	if (!(self = [super init])) return nil;
-	use = [NSNumber numberWithInteger:NSOnState];
-	address = nil;
-	hostnames = nil;
-	comment = nil;
+    self = [super init];
+    if (self) {
+        use = [NSNumber numberWithInteger:NSOnState];
+        address = nil;
+        hostnames = nil;
+        comment = nil;
+    }
 	return self;
 }
 
 - (id) initWithCHostEntry:(NLPERMANENTMARKERSHOSTS_CHostEntry *) entry {
-	use = [NSNumber numberWithInteger:NSOnState];
-	address = [NSString alloc];
-	hostnames = [NSString alloc];
-	comment = [NSString alloc];
-	
-	if (entry->address != NULL) {
-		address = [address initWithCString:entry->address encoding:NSUTF8StringEncoding];
-	} else {
-		address = [address init];
-	}
-	
-	if (entry->hostnames != NULL) {
-		hostnames = [hostnames initWithCString:entry->hostnames encoding:NSUTF8StringEncoding];
-	} else {
-		hostnames = [hostnames init];
-	}
-	
-	if (entry->comment != NULL) {
-		comment = [comment initWithCString:entry->comment encoding:NSUTF8StringEncoding];
-	} else {
-		comment = [comment init];
-	}
-	
+    self = [self init];
+    if (self) {
+        address = [NSString alloc];
+        hostnames = [NSString alloc];
+        comment = [NSString alloc];
+        
+        if (entry->address != NULL) {
+            address = [address initWithCString:entry->address encoding:NSUTF8StringEncoding];
+        } else {
+            address = [address init];
+        }
+        
+        if (entry->hostnames != NULL) {
+            hostnames = [hostnames initWithCString:entry->hostnames encoding:NSUTF8StringEncoding];
+        } else {
+            hostnames = [hostnames init];
+        }
+        
+        if (entry->comment != NULL) {
+            comment = [comment initWithCString:entry->comment encoding:NSUTF8StringEncoding];
+        } else {
+            comment = [comment init];
+        }
+    }
+
 	return self;
 }
 
