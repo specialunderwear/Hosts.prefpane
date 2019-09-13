@@ -12,7 +12,7 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <menu title="AMainMenu" systemMenu="main" id="29">
             <items>
                 <menuItem title="Hosts" id="56">
@@ -148,7 +148,7 @@
             <rect key="contentRect" x="335" y="405" width="668" height="368"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
             <view key="contentView" id="372">
-                <rect key="frame" x="7" y="11" width="668" height="368"/>
+                <rect key="frame" x="0.0" y="0.0" width="668" height="368"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <box borderType="line" titlePosition="noTitle" id="632">
@@ -162,8 +162,8 @@
                                     <rect key="frame" x="18" y="34" width="593" height="232"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <clipView key="contentView" drawsBackground="NO" id="2Is-p3-L0L">
-                                        <rect key="frame" x="1" y="25" width="591" height="206"/>
-                                        <autoresizingMask key="autoresizingMask"/>
+                                        <rect key="frame" x="1" y="0.0" width="591" height="231"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <tableView canDrawConcurrently="YES" focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" alternatingRowBackgroundColors="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="18" headerView="537" id="536">
                                                 <rect key="frame" x="0.0" y="0.0" width="591" height="206"/>
@@ -186,8 +186,8 @@ IA
 </string>
                                                         </buttonCell>
                                                         <connections>
-                                                            <binding destination="715" name="enabled" keyPath="authenticated" id="725"/>
                                                             <binding destination="572" name="value" keyPath="arrangedObjects.use" id="594"/>
+                                                            <binding destination="715" name="enabled" keyPath="authenticated" id="725"/>
                                                         </connections>
                                                     </tableColumn>
                                                     <tableColumn identifier="ip" width="123" minWidth="40" maxWidth="1000" id="539">

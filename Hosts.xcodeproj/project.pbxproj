@@ -77,6 +77,18 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		434D4D82232BD0FB0071FE88 /* README.mdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
+		434D4D84232BD7A40071FE88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/HostsPrefpane.strings; sourceTree = "<group>"; };
+		434D4D86232BD7A60071FE88 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/HostsPrefpane.strings; sourceTree = "<group>"; };
+		434D4D8B232BDC1F0071FE88 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		434D4D8C232BDC1F0071FE88 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/HostsPrefpane.strings; sourceTree = "<group>"; };
+		434D4D8D232BDC1F0071FE88 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		434D4D8E232BDC1F0071FE88 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		434D4D8F232BDD020071FE88 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/HostsPrefpane.strings; sourceTree = "<group>"; };
+		434D4D90232BDD020071FE88 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		434D4D91232BDD020071FE88 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		434D4D92232BDD020071FE88 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		434D4D94232BDE660071FE88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		434D4D96232BDE670071FE88 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		4399A41C232B85D40096B19A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4399A41D232B85D40096B19A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HostsPrefpane.xib; sourceTree = "<group>"; };
 		4399A41E232B85D80096B19A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -447,7 +459,7 @@
 				en,
 				de,
 				Base,
-				ja,
+				nl,
 				fr,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* Hosts */;
@@ -567,6 +579,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				4399A41E232B85D80096B19A /* en */,
+				434D4D8D232BDC1F0071FE88 /* nl */,
+				434D4D90232BDD020071FE88 /* fr */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -575,6 +589,10 @@
 			isa = PBXVariantGroup;
 			children = (
 				4399A41C232B85D40096B19A /* Base */,
+				434D4D8B232BDC1F0071FE88 /* nl */,
+				434D4D92232BDD020071FE88 /* fr */,
+				434D4D94232BDE660071FE88 /* en */,
+				434D4D96232BDE670071FE88 /* de */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -583,6 +601,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				DAC1106313A4A75D0078E3B5 /* en */,
+				434D4D8E232BDC1F0071FE88 /* nl */,
+				434D4D91232BDD020071FE88 /* fr */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -591,6 +611,10 @@
 			isa = PBXVariantGroup;
 			children = (
 				4399A41D232B85D40096B19A /* Base */,
+				434D4D84232BD7A40071FE88 /* en */,
+				434D4D86232BD7A60071FE88 /* de */,
+				434D4D8C232BDC1F0071FE88 /* nl */,
+				434D4D8F232BDD020071FE88 /* fr */,
 			);
 			name = HostsPrefpane.xib;
 			sourceTree = "<group>";
@@ -682,7 +706,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -720,7 +744,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				SDKROOT = macosx;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
