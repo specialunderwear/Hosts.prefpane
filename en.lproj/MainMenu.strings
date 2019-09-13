@@ -84,10 +84,10 @@
 "492.title" = "Hosts Help";
 
 /* Class = "NSTableColumn"; headerCell.title = "use"; ObjectID = "538"; */
-"538.headerCell.title" = "use";
+"538.headerCell.title" = "Use";
 
 /* Class = "NSTableColumn"; headerCell.title = "ip"; ObjectID = "539"; */
-"539.headerCell.title" = "ip";
+"539.headerCell.title" = "IP Address";
 
 /* Class = "NSTextFieldCell"; placeholderString = "ip"; ObjectID = "540"; */
 "540.placeholderString" = "ip";
@@ -96,7 +96,7 @@
 "540.title" = "Text Cell";
 
 /* Class = "NSTableColumn"; headerCell.title = "hostname"; ObjectID = "549"; */
-"549.headerCell.title" = "hostname";
+"549.headerCell.title" = "Hostname";
 
 /* Class = "NSTextFieldCell"; placeholderString = "hostnames"; ObjectID = "550"; */
 "550.placeholderString" = "hostnames";

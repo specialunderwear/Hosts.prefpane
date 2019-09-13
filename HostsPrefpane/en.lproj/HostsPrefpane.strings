@@ -12,7 +12,7 @@
 "120.headerCell.title" = "IP Address";
 
 /* Class = "NSTableColumn"; headerCell.title = "hostname"; ObjectID = "121"; */
-"121.headerCell.title" = "hostname";
+"121.headerCell.title" = "Hostname";
 
 /* Class = "NSTextFieldCell"; placeholderString = "hostnames"; ObjectID = "122"; */
 "122.placeholderString" = "hostnames";
