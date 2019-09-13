@@ -25,11 +25,11 @@ Or endorse us at coderwall: [![endorse](http://api.coderwall.com/specialunderwea
 ![](https://github.com/specialunderwear/Hosts.prefpane/raw/master/screenshots/locked.png)
 ![](https://github.com/specialunderwear/Hosts.prefpane/raw/master/screenshots/edit.png)
 
-##  Compiling Parser
+##  Compiling the parser
 To compile the parser protion of the Hosts PrefPane, you need to have ``bison`` installed somewhere. The current compiler setting expects bison to be in ``/usr/local/opt/bison/bin/``. This is where [Homebrew](https://brew.sh/) installs it (``brew install bison``).
 
-## Where is the Preference Pane?
-You'll find the preference pane in the Products folder of the Xcode project. Just copy it to the PreferencePanes folder of your Mac.
+## Where is the preference pane? The app?
+You'll find the preference pane and the app in the Products folder of the Xcode project. Just copy the pane to the PreferencePanes folder of your Mac, the app can be used from everywhere.
 
 ## Licence:
 
