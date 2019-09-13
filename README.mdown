@@ -10,7 +10,7 @@ preferences storage. This means you will have to uncomment all your unused host
 entries and untoggle them in the prefpane if you want to use them. Comments are
 treated as comments and will never show up in the list of host entries!
 
-Ofcourse Hosts.prefpane will detect edits you made to the ``/etc/hosts`` directly and
+Of course Hosts.prefpane will detect edits you made to the ``/etc/hosts`` directly and
 merge them into the listing.
 
 Backups of your hosts file is made in ``~/Library/Application Support/Hosts``.
@@ -26,7 +26,13 @@ Or endorse us at coderwall: [![endorse](http://api.coderwall.com/specialunderwea
 ![](https://github.com/specialunderwear/Hosts.prefpane/raw/master/screenshots/locked.png)
 ![](https://github.com/specialunderwear/Hosts.prefpane/raw/master/screenshots/edit.png)
 
-Licence:
+##  Compiling Parser
+To compile the parser protion of the Hosts PrefPane, you need to have ``bison`` installed somewhere. The current compiler setting expects bison to be in ``/usr/local/opt/bison/bin/``. This is where [Homebrew](https://brew.sh/) installs it (``brew install bison``).
+
+##Where is the Preference Pane?
+You'll find the preference pane in the Products folder of the Xcode project. Just copy it to the PreferencePanes folder of your Mac.
+
+##Licence:
 
     Hosts, a system preference pane to manage your hosts file.
     Copyright (C) 2011  PermanentMarkers
