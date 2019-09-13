@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		256AC3DA0F4B6AC300CF3369 /* HostsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* HostsAppDelegate.m */; };
+		4399A423232B90FF0096B19A /* icon_256x256.png in Resources */ = {isa = PBXBuildFile; fileRef = 4399A422232B90FF0096B19A /* icon_256x256.png */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -78,6 +79,7 @@
 		4399A41C232B85D40096B19A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4399A41D232B85D40096B19A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HostsPrefpane.xib; sourceTree = "<group>"; };
 		4399A41E232B85D80096B19A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4399A422232B90FF0096B19A /* icon_256x256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_256x256.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Hosts-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Hosts-Info.plist"; sourceTree = "<group>"; };
 		DA0AEF4D13A03834008B8220 /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = System/Library/Frameworks/PreferencePanes.framework; sourceTree = SDKROOT; };
 		DA0AEF6713A042FC008B8220 /* NLPERMANENTMARKERSHOSTSFileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NLPERMANENTMARKERSHOSTSFileModel.h; path = models/NLPERMANENTMARKERSHOSTSFileModel.h; sourceTree = "<group>"; };
@@ -339,6 +341,7 @@
 			children = (
 				DAC3796B14077C69008B83A6 /* LICENSE */,
 				DA9BB05913B3C3B900CA22E6 /* 32x32.tiff */,
+				4399A422232B90FF0096B19A /* icon_256x256.png */,
 				DAC1106113A4A75D0078E3B5 /* HostsPrefpane-Info.plist */,
 				DAC1106213A4A75D0078E3B5 /* InfoPlist.strings */,
 				DAC1106513A4A75D0078E3B5 /* HostsPrefpane-Prefix.pch */,
@@ -476,6 +479,7 @@
 				DAC1106E13A4A75D0078E3B5 /* HostsPrefpane.xib in Resources */,
 				DA9BB05A13B3C3B900CA22E6 /* 32x32.tiff in Resources */,
 				DAC3796D14077C69008B83A6 /* LICENSE in Resources */,
+				4399A423232B90FF0096B19A /* icon_256x256.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
