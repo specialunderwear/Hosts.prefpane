@@ -31,7 +31,7 @@ To compile the parser protion of the Hosts PrefPane, you need to have ``bison`` 
 ## Where is the preference pane? The app?
 You'll find the preference pane and the app in the Products folder of the Xcode project. Just copy the pane to the PreferencePanes folder of your Mac, the app can be used from everywhere.
 
-## Licence:
+## Licence
 
     Hosts, a system preference pane to manage your hosts file.
     Copyright (C) 2011  PermanentMarkers
