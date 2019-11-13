@@ -1,0 +1,27 @@
+
+/* Class = "NSWindow"; title = "<< do not localize >>"; ObjectID = "12"; */
+"12.title" = "<< do not localize >>";
+
+/* Class = "NSButtonCell"; alternateTitle = "Add a hosts entry below selection"; ObjectID = "113"; */
+"113.alternateTitle" = "Add a hosts entry below selection";
+
+/* Class = "NSTableColumn"; headerCell.title = "Use"; ObjectID = "119"; */
+"119.headerCell.title" = "Use";
+
+/* Class = "NSTableColumn"; headerCell.title = "IP Address"; ObjectID = "120"; */
+"120.headerCell.title" = "IP Address";
+
+/* Class = "NSTableColumn"; headerCell.title = "hostname"; ObjectID = "121"; */
+"121.headerCell.title" = "Hostname";
+
+/* Class = "NSTextFieldCell"; placeholderString = "hostnames"; ObjectID = "122"; */
+"122.placeholderString" = "hostnames";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "122"; */
+"122.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; placeholderString = "ip"; ObjectID = "123"; */
+"123.placeholderString" = "ip";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "123"; */
+"123.title" = "Text Cell";

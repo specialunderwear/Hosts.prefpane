@@ -1,0 +1,108 @@
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "19"; */
+"19.title" = "Window";
+
+/* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "23"; */
+"23.title" = "Minimize";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "24"; */
+"24.title" = "Window";
+
+/* Class = "NSMenu"; title = "AMainMenu"; ObjectID = "29"; */
+"29.title" = "AMainMenu";
+
+/* Class = "NSMenuItem"; title = "Hosts"; ObjectID = "56"; */
+"56.title" = "Hosts";
+
+/* Class = "NSMenu"; title = "Hosts"; ObjectID = "57"; */
+"57.title" = "Hosts";
+
+/* Class = "NSMenuItem"; title = "About Hosts"; ObjectID = "58"; */
+"58.title" = "About Hosts";
+
+/* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "129"; */
+"129.title" = "Preferences…";
+
+/* Class = "NSMenu"; title = "Services"; ObjectID = "130"; */
+"130.title" = "Services";
+
+/* Class = "NSMenuItem"; title = "Services"; ObjectID = "131"; */
+"131.title" = "Services";
+
+/* Class = "NSMenuItem"; title = "Hide Hosts"; ObjectID = "134"; */
+"134.title" = "Hide Hosts";
+
+/* Class = "NSMenuItem"; title = "Quit Hosts"; ObjectID = "136"; */
+"136.title" = "Quit Hosts";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "145"; */
+"145.title" = "Hide Others";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "150"; */
+"150.title" = "Show All";
+
+/* Class = "NSMenuItem"; title = "Copy"; ObjectID = "197"; */
+"197.title" = "Copy";
+
+/* Class = "NSMenuItem"; title = "Select All"; ObjectID = "198"; */
+"198.title" = "Select All";
+
+/* Class = "NSMenuItem"; title = "Cut"; ObjectID = "199"; */
+"199.title" = "Cut";
+
+/* Class = "NSMenuItem"; title = "Delete"; ObjectID = "202"; */
+"202.title" = "Delete";
+
+/* Class = "NSMenuItem"; title = "Paste"; ObjectID = "203"; */
+"203.title" = "Paste";
+
+/* Class = "NSMenu"; title = "Edit"; ObjectID = "205"; */
+"205.title" = "Edit";
+
+/* Class = "NSMenuItem"; title = "Undo"; ObjectID = "207"; */
+"207.title" = "Undo";
+
+/* Class = "NSMenuItem"; title = "Redo"; ObjectID = "215"; */
+"215.title" = "Redo";
+
+/* Class = "NSMenuItem"; title = "Edit"; ObjectID = "217"; */
+"217.title" = "Edit";
+
+/* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "239"; */
+"239.title" = "Zoom";
+
+/* Class = "NSWindow"; title = "Hosts"; ObjectID = "371"; */
+"371.title" = "Hosts";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "490"; */
+"490.title" = "Help";
+
+/* Class = "NSMenu"; title = "Help"; ObjectID = "491"; */
+"491.title" = "Help";
+
+/* Class = "NSMenuItem"; title = "Hosts Help"; ObjectID = "492"; */
+"492.title" = "Hosts Help";
+
+/* Class = "NSTableColumn"; headerCell.title = "use"; ObjectID = "538"; */
+"538.headerCell.title" = "Use";
+
+/* Class = "NSTableColumn"; headerCell.title = "ip"; ObjectID = "539"; */
+"539.headerCell.title" = "IP Address";
+
+/* Class = "NSTextFieldCell"; placeholderString = "ip"; ObjectID = "540"; */
+"540.placeholderString" = "ip";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "540"; */
+"540.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "hostname"; ObjectID = "549"; */
+"549.headerCell.title" = "Hostname";
+
+/* Class = "NSTextFieldCell"; placeholderString = "hostnames"; ObjectID = "550"; */
+"550.placeholderString" = "hostnames";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "550"; */
+"550.title" = "Text Cell";
+
+/* Class = "NSButtonCell"; alternateTitle = "Add a hosts entry below selection"; ObjectID = "566"; */
+"566.alternateTitle" = "Add a hosts entry below selection";
