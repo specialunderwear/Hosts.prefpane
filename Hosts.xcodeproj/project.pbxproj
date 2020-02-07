@@ -446,9 +446,6 @@
 						DevelopmentTeam = PZV4XW8XL7;
 						ProvisioningStyle = Automatic;
 					};
-					DAC1105B13A4A75D0078E3B5 = {
-						DevelopmentTeam = PZV4XW8XL7;
-					};
 				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Hosts" */;
@@ -754,7 +751,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ACTION = release;
-				BISON_PATH = /usr/local/opt/bison/bin/bison;
+				BISON_PATH = /opt/local/bin/bison;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -767,7 +764,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ACTION = release;
-				BISON_PATH = /usr/local/opt/bison/bin/bison;
+				BISON_PATH = /opt/local/bin/bison;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -783,7 +780,7 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = PZV4XW8XL7;
+				DEVELOPMENT_TEAM = W8E6G8GZYW;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -812,7 +809,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = PZV4XW8XL7;
+				DEVELOPMENT_TEAM = W8E6G8GZYW;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HostsPrefpane/HostsPrefpane-Prefix.pch";
