@@ -19,9 +19,14 @@ called *hosts.orig* and each session a backup is made called *hosts.session*.
 The default host entries that are needed by the OS are hidden and can not be
 edited using Hosts.prefpane.
 
-Click the [downloads link](https://github.com/specialunderwear/Hosts.prefpane/downloads) to download the installer!
-Or endorse us at coderwall: [![endorse](http://api.coderwall.com/specialunderwear/endorsecount.png)](http://coderwall.com/specialunderwear).
- 
+Much thanks to the [contributors](https://github.com/specialunderwear/Hosts.prefpane/graphs/contributors)
+for helping getting the latest release done!
+
+## Download
+Download the 1.4.1 release from here: https://permanentmarkers.nl/hosts-1.4.1.zip
+Just unzip it and double click the prefpane to install.
+
+
 ![](https://github.com/specialunderwear/Hosts.prefpane/raw/master/screenshots/locked.png)
 ![](https://github.com/specialunderwear/Hosts.prefpane/raw/master/screenshots/edit.png)
 
