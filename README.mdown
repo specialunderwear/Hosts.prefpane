@@ -1,6 +1,6 @@
-## Hosts, a system preference pane to manage your hosts file.
+## Hosts, a system preference pane to manage your hosts file
 
-Hosts add a preference pane to your system preferences which lets you toggle your
+Hosts adds a preference pane to your system preferences which lets you toggle your
 host file entries on and off, as well as add and remove them.
 
 Hosts.prefpane likes to keep your hosts file clean. When an entry is toggled off,
@@ -29,7 +29,7 @@ Or endorse us at coderwall: [![endorse](http://api.coderwall.com/specialunderwea
 To compile the parser protion of the Hosts PrefPane, you need to have ``bison`` installed somewhere. The current compiler setting expects bison to be in ``/usr/local/opt/bison/bin/``. This is where [Homebrew](https://brew.sh/) installs it (``brew install bison``).
 
 ## Where is the preference pane? The app?
-You'll find the preference pane and the app in the Products folder of the Xcode project. Just copy the pane to the PreferencePanes folder of your Mac, the app can be used from everywhere.
+You'll find the preference pane and the app in the ``ProductsToInstall`` folder of the Xcode project. Double click the zip files. ``Hosts 1.4.2.zip`` includes the app which can be used from any location on your disk. ``Hosts PrefPane 1.4.2.pkg`` is an installer for the preference pane. It will get installed into ``/Library/PreferencePanes``, so you have to enter your admin credentials duing install. The installer is neccessary for macOS Catalina, since all executables have to be notarized, and you cannot notarize a preference pane.
 
 ## Licence
 
