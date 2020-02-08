@@ -19,17 +19,20 @@ called *hosts.orig* and each session a backup is made called *hosts.session*.
 The default host entries that are needed by the OS are hidden and can not be
 edited using Hosts.prefpane.
 
-Click the [downloads link](https://github.com/specialunderwear/Hosts.prefpane/downloads) to download the installer!
-Or endorse us at coderwall: [![endorse](http://api.coderwall.com/specialunderwear/endorsecount.png)](http://coderwall.com/specialunderwear).
- 
 ![](https://github.com/specialunderwear/Hosts.prefpane/raw/master/screenshots/locked.png)
 ![](https://github.com/specialunderwear/Hosts.prefpane/raw/master/screenshots/edit.png)
 
-##  Compiling the parser
+## Where is the preference pane? The app?
+You'll find the preference pane and the app in the [``ProductsToInstall`` folder](https://github.com/Dirk-/Hosts.prefpane/tree/master/ProductsToInstall) of the Xcode project. ``Hosts 1.4.2.zip`` includes the app which can be used from any location on your disk. ``Hosts PrefPane 1.4.2.pkg`` is an installer for the preference pane. It will get installed into ``/Library/PreferencePanes``, so you have to enter your admin credentials duing install. The installer is neccessary for macOS Catalina, since all executables have to be notarized, and you cannot notarize a preference pane.
+
+## Development hints
+###  Compiling the parser
 To compile the parser protion of the Hosts PrefPane, you need to have ``bison`` installed somewhere. The current compiler setting expects bison to be in ``/usr/local/opt/bison/bin/``. This is where [Homebrew](https://brew.sh/) installs it (``brew install bison``).
 
-## Where is the preference pane? The app?
-You'll find the preference pane and the app in the ``ProductsToInstall`` folder of the Xcode project. Double click the zip files. ``Hosts 1.4.2.zip`` includes the app which can be used from any location on your disk. ``Hosts PrefPane 1.4.2.pkg`` is an installer for the preference pane. It will get installed into ``/Library/PreferencePanes``, so you have to enter your admin credentials duing install. The installer is neccessary for macOS Catalina, since all executables have to be notarized, and you cannot notarize a preference pane.
+### Catalina Installation
+Preparing the app for installation on Catalina (macOS 10.15) or higher is straightforward. Just "Archive" the app from Xcode and go through the normal notarization process.
+
+Preparing the preference pane for installation on Catalina is not that easy. You have to build an installer by using command line tools and deal with all the right developer certificates. Here is a [good description of the process](https://scriptingosx.com/2019/09/notarize-a-command-line-tool/) using a command line tool as an example project.
 
 ## Licence
 
