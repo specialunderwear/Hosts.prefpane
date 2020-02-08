@@ -12,7 +12,7 @@ treated as comments and will never show up in the list of host entries!
 Of course Hosts.prefpane will detect edits you made to the ``/etc/hosts`` directly and
 merge them into the listing.
 
-Backups of your hosts file is made in ``~/Library/Application Support/Hosts``.
+Backups of your hosts file are made in ``~/Library/Application Support/Hosts``.
 The backup or your hosts file from before you started using Hosts.prefpane is
 called *hosts.orig* and each session a backup is made called *hosts.session*.
 
