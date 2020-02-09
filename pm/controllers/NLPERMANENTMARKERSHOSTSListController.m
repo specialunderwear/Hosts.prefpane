@@ -27,7 +27,7 @@
 //@synthesize tableView;
 
 - (id) initWithCoder:(NSCoder *)aDecoder {
-    [super initWithCoder:aDecoder];
+    self = [super initWithCoder:aDecoder];
     
     // filter default rules, comments and empty lines.
     self.clearsFilterPredicateOnInsertion = NO;

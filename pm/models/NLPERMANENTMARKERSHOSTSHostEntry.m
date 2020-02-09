@@ -24,15 +24,18 @@
 @synthesize use, address, hostnames, comment;
 
 - (id) init {
-	[super init];
-	use = [NSNumber numberWithInteger:NSOnState];
-	address = nil;
-	hostnames = nil;
-	comment = nil;
+	self = [super init];
+    if (self) {
+        use = [NSNumber numberWithInteger:NSOnState];
+        address = nil;
+        hostnames = nil;
+        comment = nil;
+    }
 	return self;
 }
 
 - (id) initWithCHostEntry:(NLPERMANENTMARKERSHOSTS_CHostEntry *) entry {
+    self = [super init];
 	use = [NSNumber numberWithInteger:NSOnState];
 	address = [NSString alloc];
 	hostnames = [NSString alloc];
@@ -152,7 +155,7 @@
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
-    [super init];
+    self = [super init];
     use = [[aDecoder decodeObjectForKey:@"use"] retain];
     address = [[aDecoder decodeObjectForKey:@"address"] retain];
     hostnames = [[aDecoder decodeObjectForKey:@"hostnames"] retain];
