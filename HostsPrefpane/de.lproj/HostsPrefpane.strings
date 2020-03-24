@@ -1,27 +1,30 @@
 
 /* Class = "NSButtonCell"; alternateTitle = "Add a hosts entry below selection"; ObjectID = "113"; */
-"113.alternateTitle" = "Add a hosts entry below selection";
-
-/* Class = "NSTableColumn"; headerCell.title = "Use"; ObjectID = "119"; */
-"119.headerCell.title" = "Aktiv";
+"113.alternateTitle" = "Host-Eintrag unter ausgewählter Zeile einfügen";
 
 /* Class = "NSWindow"; title = "<< do not localize >>"; ObjectID = "12"; */
 "12.title" = "<< do not localize >>";
 
-/* Class = "NSTableColumn"; headerCell.title = "IP Address"; ObjectID = "120"; */
-"120.headerCell.title" = "IP-Adresse";
+/* Class = "NSTableColumn"; headerCell.title = "IP Address"; ObjectID = "2cX-DG-ekV"; */
+"2cX-DG-ekV.headerCell.title" = "IP-Adresse";
 
-/* Class = "NSTableColumn"; headerCell.title = "Hostname"; ObjectID = "121"; */
-"121.headerCell.title" = "Hostname";
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "FaI-jq-uuM"; */
+"FaI-jq-uuM.title" = "";
 
-/* Class = "NSTextFieldCell"; placeholderString = "hostnames"; ObjectID = "122"; */
-"122.placeholderString" = "hostnames";
+/* Class = "NSTableColumn"; headerCell.title = "Hostname"; ObjectID = "h3b-vn-bLp"; */
+"h3b-vn-bLp.headerCell.title" = "Hostname";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "122"; */
-"122.title" = "Text Cell";
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "KzZ-Jn-xJd"; */
+"KzZ-Jn-xJd.title" = "";
 
-/* Class = "NSTextFieldCell"; placeholderString = "ip"; ObjectID = "123"; */
-"123.placeholderString" = "ip";
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "oBC-88-DM7"; */
+"oBC-88-DM7.title" = "";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "123"; */
-"123.title" = "Text Cell";
+/* Class = "NSTableColumn"; headerCell.title = "Use"; ObjectID = "PJ8-A3-VaR"; */
+"PJ8-A3-VaR.headerCell.title" = "Aktiv";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "ySc-46-QRX"; */
+"ySc-46-QRX.title" = "";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Z13-5C-F7g"; */
+"Z13-5C-F7g.title" = "";

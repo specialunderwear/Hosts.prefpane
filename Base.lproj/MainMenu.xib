@@ -240,7 +240,7 @@
                                                                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jz7-Pz-F9U">
                                                                         <rect key="frame" x="15" y="0.0" width="22" height="18"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
-                                                                        <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" alignment="center" enabled="NO" inset="2" id="3ip-zb-fVr">
+                                                                        <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="only" alignment="center" enabled="NO" inset="2" id="3ip-zb-fVr">
                                                                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                                                                             <font key="font" metaFont="system"/>
                                                                         </buttonCell>
@@ -255,6 +255,7 @@
                                                         <connections>
                                                             <binding destination="572" name="value" keyPath="arrangedObjects.use" id="bxw-3V-4T0"/>
                                                             <binding destination="715" name="editable" keyPath="authenticated" id="mSe-uL-yg8"/>
+                                                            <binding destination="715" name="enabled" keyPath="authenticated" previousBinding="mSe-uL-yg8" id="Try-6H-6yd"/>
                                                         </connections>
                                                     </tableColumn>
                                                     <tableColumn width="213" minWidth="40" maxWidth="1000" id="llA-ny-U2n">

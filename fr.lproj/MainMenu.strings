@@ -89,6 +89,12 @@
 /* Class = "NSTableColumn"; headerCell.title = "Hostname"; ObjectID = "DPq-b8-uEm"; */
 "DPq-b8-uEm.headerCell.title" = "Nom d'hôte";
 
+/* Class = "NSTableColumn"; headerCell.title = "IP Address"; ObjectID = "llA-ny-U2n"; */
+"llA-ny-U2n.headerCell.title" = "Adresse IP";
+
+/* Class = "NSTableColumn"; headerCell.title = "Use"; ObjectID = "OZc-d4-idN"; */
+"OZc-d4-idN.headerCell.title" = "En activité";
+
 /* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "iaE-NJ-j5x"; */
 "iaE-NJ-j5x.title" = "";
 
@@ -97,12 +103,6 @@
 
 /* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "l1U-1D-OMc"; */
 "l1U-1D-OMc.title" = "";
-
-/* Class = "NSTableColumn"; headerCell.title = "IP Address"; ObjectID = "llA-ny-U2n"; */
-"llA-ny-U2n.headerCell.title" = "Adresse IP";
-
-/* Class = "NSTableColumn"; headerCell.title = "Use"; ObjectID = "OZc-d4-idN"; */
-"OZc-d4-idN.headerCell.title" = "En activité";
 
 /* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "QYR-GS-HJ6"; */
 "QYR-GS-HJ6.title" = "";
