@@ -8,20 +8,20 @@
 /* Class = "NSTableColumn"; headerCell.title = "IP Address"; ObjectID = "2cX-DG-ekV"; */
 "2cX-DG-ekV.headerCell.title" = "IP-adres";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "FaI-jq-uuM"; */
-"FaI-jq-uuM.title" = "";
-
 /* Class = "NSTableColumn"; headerCell.title = "Hostname"; ObjectID = "h3b-vn-bLp"; */
 "h3b-vn-bLp.headerCell.title" = "Hostnaam";
+
+/* Class = "NSTableColumn"; headerCell.title = "Use"; ObjectID = "PJ8-A3-VaR"; */
+"PJ8-A3-VaR.headerCell.title" = "Actief";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "FaI-jq-uuM"; */
+"FaI-jq-uuM.title" = "";
 
 /* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "KzZ-Jn-xJd"; */
 "KzZ-Jn-xJd.title" = "";
 
 /* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "oBC-88-DM7"; */
 "oBC-88-DM7.title" = "";
-
-/* Class = "NSTableColumn"; headerCell.title = "Use"; ObjectID = "PJ8-A3-VaR"; */
-"PJ8-A3-VaR.headerCell.title" = "Actief";
 
 /* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "ySc-46-QRX"; */
 "ySc-46-QRX.title" = "";

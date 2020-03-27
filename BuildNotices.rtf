@@ -1,0 +1,62 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red27\green31\blue34;
+\red255\green255\blue255;\red21\green23\blue26;\red10\green77\blue204;}
+{\*\expandedcolortbl;;\csgenericrgb\c0\c0\c0\c85000;\csgenericrgb\c100000\c100000\c100000;\cssrgb\c14118\c16078\c18039;
+\cssrgb\c100000\c100000\c100000;\cssrgb\c10588\c12157\c13725\c5098;\cssrgb\c1176\c40000\c83922;}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\deftab593
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \cb3 Localization:\
+\
+- Done with BartyCrouch (https://github.com/Flinesoft/BartyCrouch)\
+- Project folder contains setup-file .bratycrouch.toml\
+- To update, run "bartycrouch update" in the project folder\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf4 \cb5 \expnd0\expndtw0\kerning0
+Notarization: \
+\
+You cannot select the archive of a pref pane for notarization, this is why I made an installer. I did it along these steps:\cb1 \
+\cb5 Sign the pane:\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs23\fsmilli11900 \cf4 \cb6 codesign -v -f -s "Developer ID Application: Your Name (ABCDEFG1234)" Hosts.prefPane
+\f1\fs28 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb5 \
+Build Package (pane in folder "build"):\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs23\fsmilli11900 \cf4 \cb6 pkgbuild --root build --identifier "nl.your-domain.hosts" --version "1.4.2" --install-location "/Library/PreferencePanes" --sign "Developer ID Installer: Your Name (ABCDEFG1234)" Hosts-1.4.2.pkg
+\f1\fs28 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb5 \
+To certify the installer, you need your ProviderShortname. For this, you have to {\field{\*\fldinst{HYPERLINK "https://support.apple.com/en-us/HT204397"}}{\fldrslt \cf7 give altool a password}}:\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs23\fsmilli11900 \cf4 \cb6 xcrun altool --list-providers -u "your.name@your-domain.nl" -p "@keychain:Developer-altool"
+\f1\fs28 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb5 \
+Certify package:\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs23\fsmilli11900 \cf4 \cb6 xcrun altool --notarize-app --primary-bundle-id "nl.your-domain.hosts" --username "your.name@your-domain.nl" --password "@keychain:Developer-altool" --asc-provider "YourName123456" --file "Hosts-1.4.2.pkg"
+\f1\fs28 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb5 \
+Wait, check status:\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs23\fsmilli11900 \cf4 \cb6 xcrun altool --notarization-info "YourRequestUUID" --username "your.name@your-domain.nl" --password "@keychain:Developer-altool"
+\f1\fs28 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb5 \
+Staple notarization ticket to package for offline installation:\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs23\fsmilli11900 \cf4 \cb6 xcrun stapler staple Hosts-1.4.2.pkg}

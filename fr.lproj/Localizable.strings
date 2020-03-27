@@ -1,0 +1,35 @@
+
+/* deletion: message format string */
+"Are you sure you want to permanently remove:\n%@ from /etc/hosts?" = "Êtes-vous sûr de vouloir supprimer définitivement:\n%@de /etc/hosts ?";
+
+/* deletion: title */
+"Confirm deletion" = "Confirmer la suppression";
+
+/* undo: redo insert
+   undo: undo insert */
+"Delete host entry" = "Supprimer l'entrée de l'hôte";
+
+/* undo: undo edit */
+"Edit" = "Éditer";
+
+/* error: description */
+"In /private/etc/hosts on line:%i %s\n\n%s\n\nShould this line be permanently removed from /private/etc/hosts?\nChoose no to quit Hosts and manually correct the error." = "Dans /private/etc/hosts on line:%i %s\n\n%s\n\nCette ligne doit-elle être définitivement supprimée de /private/etc/hosts?\nChoisissez non pour quitter Hosts et corriger manuellement l'erreur.";
+
+/* undo: redo delete
+   undo: undo delete */
+"Insert host entry" = "Insérer l'entrée de l'hôte";
+
+/* error: title */
+"Parse error" = "Erreur d'analyse";
+
+/* validation: valid hostname */
+"Please enter a valid hostname" = "Veuillez entrer un nom d'hôte valide";
+
+/* validation: valid ip address */
+"Please enter a valid ip address" = "Veuillez entrer une adresse IP valide";
+
+/* No comment provided by engineer. */
+"No" = "Non";
+
+/* No comment provided by engineer. */
+"Yes" = "Oui";

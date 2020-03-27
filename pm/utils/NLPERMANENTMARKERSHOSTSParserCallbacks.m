@@ -33,13 +33,12 @@ void NLPERMANENTMARKERSHOSTSonHostEntryFound(NLPERMANENTMARKERSHOSTS_CHostEntry 
 
 // error handler for the hosts file parser
 void NLPERMANENTMARKERSHOSTSonHostsParseError(NLPERMANENTMARKERSHOSTS_CHostEntryError * error) {
-    NSString *windowTitle = NSLocalizedStringFromTable(@"Parse error", @"HostsAppDelegate",
-                                                       @"error: title");
-    NSString *errorFormatString = NSLocalizedStringFromTable(@"In /private/etc/hosts on line:%i %s\n\n%s\n\nShould this line be permanently removed from /private/etc/hosts?\nChoose no to quit Hosts and manually correct the error.",@"HostsAppDelegate",
+    NSString *windowTitle = NSLocalizedString(@"Parse error", @"error: title");
+    NSString *errorFormatString = NSLocalizedString(@"In /private/etc/hosts on line:%i %s\n\n%s\n\nShould this line be permanently removed from /private/etc/hosts?\nChoose no to quit Hosts and manually correct the error.",
                                                              @"error: description");
     NSString *errorString = [NSString stringWithFormat:errorFormatString, error->linenumber, error->token, error->error];
     
-    NSInteger choice = NSRunAlertPanel(windowTitle, @"%@", errorString, @"No", nil, @"Yes");
+    NSInteger choice = NSRunAlertPanel(windowTitle, @"%@", errorString, NSLocalizedString(@"No", nil), nil, NSLocalizedString(@"Yes", nil));
     if (choice == NSAlertDefaultReturn) {
         [[NSApplication sharedApplication] terminate:nil];
     }
