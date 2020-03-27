@@ -34,20 +34,29 @@
     authorization = [[NLPERMANENTMARKERSHOSTSAuthorization alloc] initWithAuthView:authView];
     hostfile.authorization = authorization;
     authView.delegate = self;
+    
+    // We do not really change the value here, but we inform that it has changed
+    // (actual value is from SFAuthorizationViewUnlockedState)
     [self willChangeValueForKey:@"authenticated"];
     [self didChangeValueForKey:@"authenticated"];
 }
 
 #pragma mark authorisation delegates
+
+
 - (void)authorizationViewDidAuthorize:(SFAuthorizationView *)view {
     NSLog(@"i can do what i want");
     [authorization conditionallyInstallAuthorizationRule];
+
+    // see above
     [self willChangeValueForKey:@"authenticated"];
     [self didChangeValueForKey:@"authenticated"];
 }
 
 - (void)authorizationViewDidDeauthorize:(SFAuthorizationView *)view {
     NSLog(@"I can not do what i want");
+    
+    // see above
     [self willChangeValueForKey:@"authenticated"];
     [self didChangeValueForKey:@"authenticated"];
 }

@@ -191,7 +191,7 @@
                                         <string key="keyEquivalent"></string>
                                     </buttonCell>
                                     <connections>
-                                        <action selector="remove:" target="572" id="595"/>
+                                        <action selector="confirmDeleteItem:" target="572" id="eg2-1a-cFB"/>
                                         <binding destination="715" name="enabled2" keyPath="authenticated" previousBinding="598" id="741">
                                             <dictionary key="options">
                                                 <integer key="NSMultipleValuesPlaceholder" value="-1"/>
@@ -228,7 +228,8 @@
                                                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                             <connections>
-                                                                <binding destination="715" name="enabled" keyPath="authenticated" id="4l0-j4-zab"/>
+                                                                <binding destination="715" name="editable" keyPath="authenticated" id="CKr-gQ-yRz"/>
+                                                                <binding destination="715" name="enabled" keyPath="authenticated" previousBinding="CKr-gQ-yRz" id="Xgj-Tc-4GB"/>
                                                             </connections>
                                                         </textFieldCell>
                                                         <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
@@ -243,6 +244,9 @@
                                                                         <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="only" alignment="center" enabled="NO" inset="2" id="3ip-zb-fVr">
                                                                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                                                                             <font key="font" metaFont="system"/>
+                                                                            <connections>
+                                                                                <binding destination="715" name="enabled" keyPath="authenticated" id="cZg-db-Hgx"/>
+                                                                            </connections>
                                                                         </buttonCell>
                                                                         <connections>
                                                                             <binding destination="715" name="enabled" keyPath="authenticated" id="Sey-CD-lkS"/>
@@ -254,8 +258,8 @@
                                                         </prototypeCellViews>
                                                         <connections>
                                                             <binding destination="572" name="value" keyPath="arrangedObjects.use" id="bxw-3V-4T0"/>
-                                                            <binding destination="715" name="editable" keyPath="authenticated" id="mSe-uL-yg8"/>
                                                             <binding destination="715" name="enabled" keyPath="authenticated" previousBinding="mSe-uL-yg8" id="Try-6H-6yd"/>
+                                                            <binding destination="715" name="editable" keyPath="authenticated" id="mSe-uL-yg8"/>
                                                         </connections>
                                                     </tableColumn>
                                                     <tableColumn width="213" minWidth="40" maxWidth="1000" id="llA-ny-U2n">
