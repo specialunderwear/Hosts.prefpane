@@ -181,7 +181,7 @@
                                                         <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                         <prototypeCellViews>
                                                             <tableCellView id="LgB-wR-mrC">
-                                                                <rect key="frame" x="359.5" y="1" width="229" height="17"/>
+                                                                <rect key="frame" x="360" y="1" width="229" height="17"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                 <subviews>
                                                                     <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lbb-3w-OFU">
@@ -210,6 +210,7 @@
                                                 </tableColumns>
                                                 <connections>
                                                     <binding destination="102" name="enabled" keyPath="authenticated" id="J7S-Aq-ubx"/>
+                                                    <outlet property="dataSource" destination="161" id="47A-Rj-ZG0"/>
                                                 </connections>
                                             </tableView>
                                         </subviews>
@@ -241,7 +242,7 @@
             </connections>
             <point key="canvasLocation" x="140" y="147"/>
         </window>
-        <arrayController objectClassName="PMHostEntry" preservesSelection="NO" avoidsEmptySelection="NO" clearsFilterPredicateOnInsertion="NO" id="99" userLabel="Host List Controller" customClass="NLPERMANENTMARKERSHOSTSListController">
+        <arrayController objectClassName="NLPERMANENTMARKERSHOSTSHostEntry" preservesSelection="NO" avoidsEmptySelection="NO" clearsFilterPredicateOnInsertion="NO" id="99" userLabel="Host List Controller" customClass="NLPERMANENTMARKERSHOSTSListController">
             <declaredKeys>
                 <string>use</string>
                 <string>address</string>
@@ -249,6 +250,7 @@
             </declaredKeys>
             <connections>
                 <binding destination="161" name="contentArray" keyPath="hosts" id="164"/>
+                <outlet property="tableView" destination="lCc-S7-Y57" id="IBM-Ol-qXT"/>
             </connections>
         </arrayController>
         <customObject id="101" customClass="NSFontManager"/>

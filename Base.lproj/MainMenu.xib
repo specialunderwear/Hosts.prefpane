@@ -345,6 +345,7 @@
                                                 </tableColumns>
                                                 <connections>
                                                     <binding destination="715" name="enabled" keyPath="authenticated" id="mcC-zh-x0x"/>
+                                                    <outlet property="dataSource" destination="734" id="wD4-w1-UXa"/>
                                                 </connections>
                                             </tableView>
                                         </subviews>
@@ -380,7 +381,7 @@
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
-        <arrayController objectClassName="PMHostEntry" preservesSelection="NO" avoidsEmptySelection="NO" clearsFilterPredicateOnInsertion="NO" id="572" userLabel="Host List Controller" customClass="NLPERMANENTMARKERSHOSTSListController">
+        <arrayController objectClassName="NLPERMANENTMARKERSHOSTSHostEntry" preservesSelection="NO" avoidsEmptySelection="NO" clearsFilterPredicateOnInsertion="NO" id="572" userLabel="Host List Controller" customClass="NLPERMANENTMARKERSHOSTSListController">
             <declaredKeys>
                 <string>use</string>
                 <string>address</string>
@@ -388,6 +389,7 @@
             </declaredKeys>
             <connections>
                 <binding destination="734" name="contentArray" keyPath="hosts" id="737"/>
+                <outlet property="tableView" destination="FgI-XJ-gor" id="Rg2-hm-erV"/>
             </connections>
         </arrayController>
         <userDefaultsController representsSharedInstance="YES" id="573"/>
