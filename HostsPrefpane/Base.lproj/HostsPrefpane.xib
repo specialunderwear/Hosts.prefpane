@@ -153,7 +153,11 @@
                                                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                                         </textFieldCell>
                                                                         <connections>
-                                                                            <binding destination="yf2-MH-AMy" name="value" keyPath="objectValue.address" id="iDk-Bo-qJK"/>
+                                                                            <binding destination="yf2-MH-AMy" name="value" keyPath="objectValue.address" id="yqa-f8-Gf0">
+                                                                                <dictionary key="options">
+                                                                                    <bool key="NSValidatesImmediately" value="YES"/>
+                                                                                </dictionary>
+                                                                            </binding>
                                                                         </connections>
                                                                     </textField>
                                                                 </subviews>
@@ -181,7 +185,7 @@
                                                         <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                         <prototypeCellViews>
                                                             <tableCellView id="LgB-wR-mrC">
-                                                                <rect key="frame" x="360" y="1" width="229" height="17"/>
+                                                                <rect key="frame" x="359.5" y="1" width="229" height="17"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                 <subviews>
                                                                     <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lbb-3w-OFU">
@@ -193,7 +197,11 @@
                                                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                                         </textFieldCell>
                                                                         <connections>
-                                                                            <binding destination="LgB-wR-mrC" name="value" keyPath="objectValue.hostnames" id="fXs-4u-tsV"/>
+                                                                            <binding destination="LgB-wR-mrC" name="value" keyPath="objectValue.hostnames" id="145-aW-kYg">
+                                                                                <dictionary key="options">
+                                                                                    <bool key="NSValidatesImmediately" value="YES"/>
+                                                                                </dictionary>
+                                                                            </binding>
                                                                         </connections>
                                                                     </textField>
                                                                 </subviews>

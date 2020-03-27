@@ -288,7 +288,11 @@
                                                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                                         </textFieldCell>
                                                                         <connections>
-                                                                            <binding destination="yJM-GV-dbi" name="value" keyPath="objectValue.address" id="Iih-Ag-app"/>
+                                                                            <binding destination="yJM-GV-dbi" name="value" keyPath="objectValue.address" id="PHF-ph-cnD">
+                                                                                <dictionary key="options">
+                                                                                    <bool key="NSValidatesImmediately" value="YES"/>
+                                                                                </dictionary>
+                                                                            </binding>
                                                                         </connections>
                                                                     </textField>
                                                                 </subviews>
@@ -328,7 +332,11 @@
                                                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                                         </textFieldCell>
                                                                         <connections>
-                                                                            <binding destination="b1B-AM-kTa" name="value" keyPath="objectValue.hostnames" id="X5R-gi-Res"/>
+                                                                            <binding destination="b1B-AM-kTa" name="value" keyPath="objectValue.hostnames" id="Y0g-CW-rPt">
+                                                                                <dictionary key="options">
+                                                                                    <bool key="NSValidatesImmediately" value="YES"/>
+                                                                                </dictionary>
+                                                                            </binding>
                                                                         </connections>
                                                                     </textField>
                                                                 </subviews>
