@@ -13,7 +13,7 @@
 "Edit" = "Bearbeiten";
 
 /* error: description */
-"In /private/etc/hosts on line:%i %s\n\n%s\n\nShould this line be permanently removed from /private/etc/hosts?\nChoose no to quit Hosts and manually correct the error." = "In /private/etc/hosts in der Zeile:%i %s\n\n%s\n\nSoll diese Zeile duerhaft von /private/etc/hosts entfernt werden?\nWähle Nein, um Hosts zu beenden und den Fehler manuell zu beheben.";
+"In /private/etc/hosts on line:%i %s\n\n%s\n\nShould this line be permanently removed from /private/etc/hosts?\nChoose no to quit Hosts and manually correct the error." = "In /private/etc/hosts in der Zeile:%i %s\n\n%s\n\nSoll diese Zeile dauerhaft von /private/etc/hosts entfernt werden?\nWähle Nein, um Hosts zu beenden und den Fehler manuell zu beheben.";
 
 /* undo: redo delete
    undo: undo delete */
