@@ -210,7 +210,7 @@
                                         <rect key="frame" x="1" y="0.0" width="591" height="229"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
-                                            <tableView verticalHuggingPriority="750" ambiguous="YES" allowsExpansionToolTips="YES" alternatingRowBackgroundColors="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="Hez-H4-bvH" viewBased="YES" id="FgI-XJ-gor">
+                                            <tableView verticalHuggingPriority="750" ambiguous="YES" allowsExpansionToolTips="YES" alternatingRowBackgroundColors="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="Hez-H4-bvH" id="FgI-XJ-gor">
                                                 <rect key="frame" x="0.0" y="0.0" width="591" height="204"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <size key="intercellSpacing" width="3" height="2"/>
@@ -223,39 +223,14 @@
                                                             <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                             <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                         </tableHeaderCell>
-                                                        <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" title="Text Cell" id="kVo-EQ-WiS">
+                                                        <buttonCell key="dataCell" type="check" bezelStyle="regularSquare" imagePosition="only" alignment="center" enabled="NO" inset="2" id="iEk-wR-U1A">
+                                                            <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                                                             <font key="font" metaFont="system"/>
-                                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                             <connections>
-                                                                <binding destination="715" name="editable" keyPath="authenticated" id="CKr-gQ-yRz"/>
-                                                                <binding destination="715" name="enabled" keyPath="authenticated" previousBinding="CKr-gQ-yRz" id="Xgj-Tc-4GB"/>
+                                                                <binding destination="715" name="enabled" keyPath="authenticated" id="ovI-7o-Rej"/>
                                                             </connections>
-                                                        </textFieldCell>
+                                                        </buttonCell>
                                                         <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                                        <prototypeCellViews>
-                                                            <tableCellView id="ujU-iD-hkk">
-                                                                <rect key="frame" x="1" y="1" width="49" height="17"/>
-                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                                <subviews>
-                                                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jz7-Pz-F9U">
-                                                                        <rect key="frame" x="15" y="0.0" width="22" height="18"/>
-                                                                        <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
-                                                                        <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="only" alignment="center" enabled="NO" inset="2" id="3ip-zb-fVr">
-                                                                            <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
-                                                                            <font key="font" metaFont="system"/>
-                                                                            <connections>
-                                                                                <binding destination="715" name="enabled" keyPath="authenticated" id="cZg-db-Hgx"/>
-                                                                            </connections>
-                                                                        </buttonCell>
-                                                                        <connections>
-                                                                            <binding destination="715" name="enabled" keyPath="authenticated" id="Sey-CD-lkS"/>
-                                                                            <binding destination="ujU-iD-hkk" name="value" keyPath="objectValue.use" id="YOw-Az-gYc"/>
-                                                                        </connections>
-                                                                    </button>
-                                                                </subviews>
-                                                            </tableCellView>
-                                                        </prototypeCellViews>
                                                         <connections>
                                                             <binding destination="572" name="value" keyPath="arrangedObjects.use" id="bxw-3V-4T0"/>
                                                             <binding destination="715" name="enabled" keyPath="authenticated" previousBinding="mSe-uL-yg8" id="Try-6H-6yd"/>
@@ -274,33 +249,6 @@
                                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>
                                                         <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                                        <prototypeCellViews>
-                                                            <tableCellView id="yJM-GV-dbi">
-                                                                <rect key="frame" x="53" y="1" width="213" height="17"/>
-                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                                <subviews>
-                                                                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RVv-ea-LF1">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="213" height="17"/>
-                                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                                        <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" title="Table View Cell" id="QYR-GS-HJ6">
-                                                                            <font key="font" metaFont="cellTitle"/>
-                                                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                                                        </textFieldCell>
-                                                                        <connections>
-                                                                            <binding destination="yJM-GV-dbi" name="value" keyPath="objectValue.address" id="PHF-ph-cnD">
-                                                                                <dictionary key="options">
-                                                                                    <bool key="NSValidatesImmediately" value="YES"/>
-                                                                                </dictionary>
-                                                                            </binding>
-                                                                        </connections>
-                                                                    </textField>
-                                                                </subviews>
-                                                                <connections>
-                                                                    <outlet property="textField" destination="RVv-ea-LF1" id="BdZ-wT-O5o"/>
-                                                                </connections>
-                                                            </tableCellView>
-                                                        </prototypeCellViews>
                                                         <connections>
                                                             <binding destination="572" name="value" keyPath="arrangedObjects.address" id="Smp-tC-3HS"/>
                                                             <binding destination="715" name="enabled" keyPath="authenticated" id="aCp-mj-vJv"/>
@@ -318,33 +266,6 @@
                                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>
                                                         <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                                        <prototypeCellViews>
-                                                            <tableCellView id="b1B-AM-kTa">
-                                                                <rect key="frame" x="269" y="1" width="320" height="17"/>
-                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                                <subviews>
-                                                                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OHQ-CJ-zzd">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="17"/>
-                                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                                        <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" title="Table View Cell" id="iaE-NJ-j5x">
-                                                                            <font key="font" metaFont="cellTitle"/>
-                                                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                                                        </textFieldCell>
-                                                                        <connections>
-                                                                            <binding destination="b1B-AM-kTa" name="value" keyPath="objectValue.hostnames" id="Y0g-CW-rPt">
-                                                                                <dictionary key="options">
-                                                                                    <bool key="NSValidatesImmediately" value="YES"/>
-                                                                                </dictionary>
-                                                                            </binding>
-                                                                        </connections>
-                                                                    </textField>
-                                                                </subviews>
-                                                                <connections>
-                                                                    <outlet property="textField" destination="OHQ-CJ-zzd" id="BH5-34-feE"/>
-                                                                </connections>
-                                                            </tableCellView>
-                                                        </prototypeCellViews>
                                                         <connections>
                                                             <binding destination="572" name="value" keyPath="arrangedObjects.hostnames" id="ow6-tU-bhH"/>
                                                             <binding destination="715" name="enabled" keyPath="authenticated" id="1F6-JH-GZI"/>
