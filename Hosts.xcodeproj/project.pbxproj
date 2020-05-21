@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		256AC3DA0F4B6AC300CF3369 /* HostsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* HostsAppDelegate.m */; };
+		4343898424768D17005593D8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43C68DE1242E63D7004E11C9 /* Localizable.strings */; };
 		4399A425232BA0EC0096B19A /* icon_256x256.png in Resources */ = {isa = PBXBuildFile; fileRef = 4399A424232BA0EC0096B19A /* icon_256x256.png */; };
 		43C68DDE242E63D7004E11C9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43C68DE1242E63D7004E11C9 /* Localizable.strings */; };
-		43C68DDF242E63D7004E11C9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43C68DE1242E63D7004E11C9 /* Localizable.strings */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -498,8 +498,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4343898424768D17005593D8 /* Localizable.strings in Resources */,
 				DAC1106413A4A75D0078E3B5 /* InfoPlist.strings in Resources */,
-				43C68DDF242E63D7004E11C9 /* Localizable.strings in Resources */,
 				DAC1106E13A4A75D0078E3B5 /* HostsPrefpane.xib in Resources */,
 				DA9BB05A13B3C3B900CA22E6 /* 32x32.tiff in Resources */,
 				DAC3796D14077C69008B83A6 /* LICENSE in Resources */,
