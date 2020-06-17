@@ -23,7 +23,6 @@
 		DA335E9F13B1609900BA1103 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = DA335E9E13B1609900BA1103 /* icon.icns */; };
 		DA335EA113B1638000BA1103 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA335EA013B1638000BA1103 /* IOKit.framework */; };
 		DA5C7BF6138CBC1B00FC0898 /* NLPERMANENTMARKERSHOSTSListController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5C7BF5138CBC1B00FC0898 /* NLPERMANENTMARKERSHOSTSListController.m */; };
-		DA8CA616131EFC7A0084573A /* hostsparser.o in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8CA615131EFC7A0084573A /* hostsparser.o */; };
 		DA99953013A60A72007F78D1 /* PMModalDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA99952F13A60A72007F78D1 /* PMModalDelegate.m */; };
 		DA99953113A6CA9F007F78D1 /* PMModalDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA99952F13A60A72007F78D1 /* PMModalDelegate.m */; };
 		DA9BB05A13B3C3B900CA22E6 /* 32x32.tiff in Resources */ = {isa = PBXBuildFile; fileRef = DA9BB05913B3C3B900CA22E6 /* 32x32.tiff */; };
@@ -127,7 +126,6 @@
 		DA8CA5EF131EFA040084573A /* hostsparser.yy */ = {isa = PBXFileReference; explicitFileType = sourcecode.lex; fileEncoding = 4; path = hostsparser.yy; sourceTree = "<group>"; };
 		DA8CA5F0131EFA040084573A /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		DA8CA5F1131EFA040084573A /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		DA8CA615131EFC7A0084573A /* hostsparser.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = hostsparser.o; path = c/parser/hostsparser.o; sourceTree = SOURCE_ROOT; };
 		DA99952B13A4DC2A007F78D1 /* Hosts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hosts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA99952D13A4DC2A007F78D1 /* Hosts.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Hosts.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA99952E13A60A72007F78D1 /* PMModalDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMModalDelegate.h; sourceTree = "<group>"; };
@@ -159,7 +157,6 @@
 				DAE30CE713F87AC60068E007 /* Security.framework in Frameworks */,
 				DAE30CE813F87AC60068E007 /* SecurityFoundation.framework in Frameworks */,
 				DAE30CE913F87AC60068E007 /* SecurityInterface.framework in Frameworks */,
-				DA8CA616131EFC7A0084573A /* hostsparser.o in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +232,6 @@
 				DAC1105F13A4A75D0078E3B5 /* HostsPrefpane */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				DA8CA615131EFC7A0084573A /* hostsparser.o */,
 			);
 			name = Hosts;
 			sourceTree = "<group>";

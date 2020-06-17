@@ -22,8 +22,10 @@ edited using Hosts.prefpane.
 ![](https://github.com/specialunderwear/Hosts.prefpane/raw/master/screenshots/locked.png)
 ![](https://github.com/specialunderwear/Hosts.prefpane/raw/master/screenshots/edit.png)
 
-## Where is the preference pane? The app?
-You'll find the pre-built preference pane and the app on my [website](https://www.dirk-froehling.de/downloads/downloads.html). ``Hosts App 1.4.3.zip`` includes the app which can be used from any location on your disk. ``Hosts PrefPane 1.4.3.pkg`` is an installer for the preference pane. It will get installed into ``/Library/PreferencePanes``, so you have to enter your admin credentials during installation. The installer is neccessary for macOS Catalina, since all executables have to be notarized, and you cannot notarize a preference pane.
+## Download
+For now you'll find the latest pre-built preference pane and the app on  [Dirk-'s website](https://www.dirk-froehling.de/downloads/downloads.html). ``Hosts App 1.4.3.zip`` includes the app which can be used from any location on your disk. ``Hosts PrefPane 1.4.3.pkg`` is an installer for the preference pane. It will get installed into ``/Library/PreferencePanes``, so you have to enter your admin credentials during installation. The installer is neccessary for macOS Catalina, since all executables have to be notarized, and you cannot notarize a preference pane.
+
+Download the 1.4.1 release from here: https://permanentmarkers.nl/hosts-1.4.1.zip
 
 ## Development hints
 ###  Compiling the parser
