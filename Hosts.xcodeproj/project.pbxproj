@@ -793,7 +793,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ACTION = release;
-				BISON_PATH = /usr/local/opt/bison/bin/bison;
+				BISON_PATH = /opt/local/bin/bison;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -807,7 +807,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ACTION = release;
-				BISON_PATH = /usr/local/opt/bison/bin/bison;
+				BISON_PATH = /opt/local/bin/bison;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -859,7 +859,7 @@
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 6;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = PZV4XW8XL7;
+				DEVELOPMENT_TEAM = W8E6G8GZYW;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HostsPrefpane/HostsPrefpane-Prefix.pch";
