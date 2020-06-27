@@ -1,6 +1,6 @@
-## Hosts, a system preference pane to manage your hosts file.
+## Hosts, a system preference pane to manage your hosts file
 
-Hosts add a preference pane to your system preferences which lets you toggle your
+Hosts adds a preference pane to your system preferences which lets you toggle your
 host file entries on and off, as well as add and remove them.
 
 Hosts.prefpane likes to keep your hosts file clean. When an entry is toggled off,
@@ -12,7 +12,7 @@ treated as comments and will never show up in the list of host entries!
 Of course Hosts.prefpane will detect edits you made to the ``/etc/hosts`` directly and
 merge them into the listing.
 
-Backups of your hosts file is made in ``~/Library/Application Support/Hosts``.
+Backups of your hosts file are made in ``~/Library/Application Support/Hosts``.
 The backup or your hosts file from before you started using Hosts.prefpane is
 called *hosts.orig* and each session a backup is made called *hosts.session*.
 
@@ -22,19 +22,22 @@ edited using Hosts.prefpane.
 Much thanks to the [contributors](https://github.com/specialunderwear/Hosts.prefpane/graphs/contributors)
 for helping getting the latest release done!
 
-## Download
-Download the 1.4.1 release from here: https://permanentmarkers.nl/hosts-1.4.1.zip
-Just unzip it and double click the prefpane to install.
-
-
 ![](https://github.com/specialunderwear/Hosts.prefpane/raw/master/screenshots/locked.png)
 ![](https://github.com/specialunderwear/Hosts.prefpane/raw/master/screenshots/edit.png)
 
-##  Compiling the parser
+## Download
+For now you'll find the latest pre-built preference pane and the app on  [Dirk-'s website](https://www.dirk-froehling.de/downloads/downloads.html). ``Hosts App 1.4.3.zip`` includes the app which can be used from any location on your disk. ``Hosts PrefPane 1.4.3.pkg`` is an installer for the preference pane. It will get installed into ``/Library/PreferencePanes``, so you have to enter your admin credentials during installation. The installer is neccessary for macOS Catalina, since all executables have to be notarized, and you cannot notarize a preference pane.
+
+Download the 1.4.1 release from here: https://permanentmarkers.nl/hosts-1.4.1.zip
+
+## Development hints
+###  Compiling the parser
 To compile the parser protion of the Hosts PrefPane, you need to have ``bison`` installed somewhere. The current compiler setting expects bison to be in ``/usr/local/opt/bison/bin/``. This is where [Homebrew](https://brew.sh/) installs it (``brew install bison``).
 
-## Where is the preference pane? The app?
-You'll find the preference pane and the app in the Products folder of the Xcode project. Just copy the pane to the PreferencePanes folder of your Mac, the app can be used from everywhere.
+### Catalina Installation
+Preparing the app for installation on Catalina (macOS 10.15) or higher is straightforward. Just "Archive" the app from Xcode and go through the normal notarization process.
+
+Preparing the preference pane for installation on Catalina is not that easy. You have to build an installer by using command line tools and deal with all the right developer certificates. Here is a [good description of the process](https://scriptingosx.com/2019/09/notarize-a-command-line-tool/) using a command line tool as an example project.
 
 ## Licence
 

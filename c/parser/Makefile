@@ -45,3 +45,6 @@ release: clean libs
 clean:
 	-rm -f *.exe *.o hostsparser.tab.c 1 *~ hosts hostsscanner.h hostsparser.output hostsparser.tab.h lex.*.c
 	-rm -fr hosts.dSYM
+	
+install:
+

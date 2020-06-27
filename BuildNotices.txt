@@ -1,0 +1,45 @@
+Bison path setting in parser target:
+
+Original path: /opt/local/bin/bison
+Homebrew path: /usr/local/opt/bison/bin/bison
+
+
+Localization:
+
+- Done with BartyCrouch (https://github.com/Flinesoft/BartyCrouch)
+- Project folder contains setup-file .bartycrouch.toml
+- To update, run "bartycrouch update" in the project folder
+- Known Issue: Localized strings are not used in preference pane, only in app.
+
+
+Notarization:
+
+You cannot select the archive of a pref pane for notarization, this is why I made an installer. I did it along these steps:
+
+Find out your developer identities:
+security find-identity -p basic -v
+
+Note the one called "Developer ID Application". I will refer to the actual name with "Your Name (ABCDEFG1234)".
+
+Sign the pane:
+codesign -v -f -s "Developer ID Application: Your Name (ABCDEFG1234)" Hosts.prefPane
+
+Build Package (pane in folder "build"):
+pkgbuild --root build --identifier "nl.your-domain.hosts" --version "1.4.3" --install-location "/Library/PreferencePanes" --sign "Developer ID Installer: Your Name (ABCDEFG1234)" Hosts-PrefPane-1.4.3.pkg
+
+To certify the installer, you need your ProviderShortname. For this, you have to give altool its app-specific password:
+xcrun altool --list-providers -u "your.name@your-domain.nl" -p "@keychain:Developer-altool"
+
+Certify package:
+xcrun altool --notarize-app --primary-bundle-id "nl.your-domain.hosts" --username "your.name@your-domain.nl" --password "@keychain:Developer-altool" --asc-provider "YourName123456" --file "Hosts-PrefPane-1.4.3.pkg"
+
+Wait, check status:
+xcrun altool --notarization-info "YourRequestUUID" --username "your.name@your-domain.nl" --password "@keychain:Developer-altool"
+
+Staple notarization ticket to package for offline installation:
+xcrun stapler staple Hosts-PrefPane-1.4.3.pkg
+
+
+Issue with Check Box disabling:
+https://stackoverflow.com/questions/29616204/unable-to-disable-checkbox-nsbutton-inside-a-disabled-nstableview
+

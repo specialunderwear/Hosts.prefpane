@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		256AC3DA0F4B6AC300CF3369 /* HostsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* HostsAppDelegate.m */; };
+		4343898424768D17005593D8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43C68DE1242E63D7004E11C9 /* Localizable.strings */; };
+		435FD1A0249A85B9004FCDC8 /* hostsparser.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 435FD19F249A85B9004FCDC8 /* hostsparser.o */; };
 		4399A425232BA0EC0096B19A /* icon_256x256.png in Resources */ = {isa = PBXBuildFile; fileRef = 4399A424232BA0EC0096B19A /* icon_256x256.png */; };
+		43C68DDE242E63D7004E11C9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43C68DE1242E63D7004E11C9 /* Localizable.strings */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -21,7 +24,6 @@
 		DA335E9F13B1609900BA1103 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = DA335E9E13B1609900BA1103 /* icon.icns */; };
 		DA335EA113B1638000BA1103 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA335EA013B1638000BA1103 /* IOKit.framework */; };
 		DA5C7BF6138CBC1B00FC0898 /* NLPERMANENTMARKERSHOSTSListController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5C7BF5138CBC1B00FC0898 /* NLPERMANENTMARKERSHOSTSListController.m */; };
-		DA8CA616131EFC7A0084573A /* hostsparser.o in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8CA615131EFC7A0084573A /* hostsparser.o */; };
 		DA99953013A60A72007F78D1 /* PMModalDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA99952F13A60A72007F78D1 /* PMModalDelegate.m */; };
 		DA99953113A6CA9F007F78D1 /* PMModalDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA99952F13A60A72007F78D1 /* PMModalDelegate.m */; };
 		DA9BB05A13B3C3B900CA22E6 /* 32x32.tiff in Resources */ = {isa = PBXBuildFile; fileRef = DA9BB05913B3C3B900CA22E6 /* 32x32.tiff */; };
@@ -89,10 +91,18 @@
 		434D4D92232BDD020071FE88 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		434D4D94232BDE660071FE88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		434D4D96232BDE670071FE88 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		435FD19F249A85B9004FCDC8 /* hostsparser.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = hostsparser.o; path = c/parser/hostsparser.o; sourceTree = "<group>"; };
 		4399A41C232B85D40096B19A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4399A41D232B85D40096B19A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HostsPrefpane.xib; sourceTree = "<group>"; };
 		4399A41E232B85D80096B19A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4399A424232BA0EC0096B19A /* icon_256x256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_256x256.png; sourceTree = "<group>"; };
+		43C68DE0242E63D7004E11C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		43C68DE2242E63E2004E11C9 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		43C68DE3242E63E4004E11C9 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		43C68DE4242E63E5004E11C9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		43C68DE5242E655C004E11C9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		43C68DE6242E6570004E11C9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		43F55BA3246848F100CE5119 /* BuildNotices.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = BuildNotices.txt; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Hosts-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Hosts-Info.plist"; sourceTree = "<group>"; };
 		DA0AEF4D13A03834008B8220 /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = System/Library/Frameworks/PreferencePanes.framework; sourceTree = SDKROOT; };
 		DA0AEF6713A042FC008B8220 /* NLPERMANENTMARKERSHOSTSFileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NLPERMANENTMARKERSHOSTSFileModel.h; path = models/NLPERMANENTMARKERSHOSTSFileModel.h; sourceTree = "<group>"; };
@@ -118,7 +128,6 @@
 		DA8CA5EF131EFA040084573A /* hostsparser.yy */ = {isa = PBXFileReference; explicitFileType = sourcecode.lex; fileEncoding = 4; path = hostsparser.yy; sourceTree = "<group>"; };
 		DA8CA5F0131EFA040084573A /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		DA8CA5F1131EFA040084573A /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		DA8CA615131EFC7A0084573A /* hostsparser.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = hostsparser.o; path = c/parser/hostsparser.o; sourceTree = SOURCE_ROOT; };
 		DA99952B13A4DC2A007F78D1 /* Hosts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hosts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA99952D13A4DC2A007F78D1 /* Hosts.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Hosts.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA99952E13A60A72007F78D1 /* PMModalDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMModalDelegate.h; sourceTree = "<group>"; };
@@ -145,12 +154,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				435FD1A0249A85B9004FCDC8 /* hostsparser.o in Frameworks */,
 				DA335EA113B1638000BA1103 /* IOKit.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				DAE30CE713F87AC60068E007 /* Security.framework in Frameworks */,
 				DAE30CE813F87AC60068E007 /* SecurityFoundation.framework in Frameworks */,
 				DAE30CE913F87AC60068E007 /* SecurityInterface.framework in Frameworks */,
-				DA8CA616131EFC7A0084573A /* hostsparser.o in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,13 +228,14 @@
 			isa = PBXGroup;
 			children = (
 				434D4D82232BD0FB0071FE88 /* README.mdown */,
+				43F55BA3246848F100CE5119 /* BuildNotices.txt */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				DAC1105F13A4A75D0078E3B5 /* HostsPrefpane */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				DA8CA615131EFC7A0084573A /* hostsparser.o */,
+				435FD19F249A85B9004FCDC8 /* hostsparser.o */,
 			);
 			name = Hosts;
 			sourceTree = "<group>";
@@ -246,6 +256,7 @@
 				8D1107310486CEB800E47090 /* Hosts-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+				43C68DE1242E63D7004E11C9 /* Localizable.strings */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -440,7 +451,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1030;
+				LastUpgradeCheck = 1130;
 				TargetAttributes = {
 					8D1107260486CEB800E47090 = {
 						DevelopmentTeam = PZV4XW8XL7;
@@ -475,6 +486,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43C68DDE242E63D7004E11C9 /* Localizable.strings in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 				DA335E9F13B1609900BA1103 /* icon.icns in Resources */,
@@ -486,6 +498,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4343898424768D17005593D8 /* Localizable.strings in Resources */,
 				DAC1106413A4A75D0078E3B5 /* InfoPlist.strings in Resources */,
 				DAC1106E13A4A75D0078E3B5 /* HostsPrefpane.xib in Resources */,
 				DA9BB05A13B3C3B900CA22E6 /* 32x32.tiff in Resources */,
@@ -518,7 +531,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -578,6 +591,7 @@
 				4399A41E232B85D80096B19A /* en */,
 				434D4D8D232BDC1F0071FE88 /* nl */,
 				434D4D90232BDD020071FE88 /* fr */,
+				43C68DE5242E655C004E11C9 /* de */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -594,12 +608,24 @@
 			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
+		43C68DE1242E63D7004E11C9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43C68DE0242E63D7004E11C9 /* en */,
+				43C68DE2242E63E2004E11C9 /* nl */,
+				43C68DE3242E63E4004E11C9 /* fr */,
+				43C68DE4242E63E5004E11C9 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		DAC1106213A4A75D0078E3B5 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DAC1106313A4A75D0078E3B5 /* en */,
 				434D4D8E232BDC1F0071FE88 /* nl */,
 				434D4D91232BDD020071FE88 /* fr */,
+				43C68DE6242E6570004E11C9 /* de */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -626,19 +652,25 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				DEPLOYMENT_POSTPROCESSING = YES;
+				CURRENT_PROJECT_VERSION = 6;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEPLOYMENT_POSTPROCESSING = NO;
 				DEVELOPMENT_TEAM = PZV4XW8XL7;
+				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = Hosts_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
 				HEADER_SEARCH_PATHS = $SRCROOT;
 				INFOPLIST_FILE = "Hosts-Info.plist";
-				INSTALL_PATH = "$(HOME)/Applications";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MARKETING_VERSION = 1.4.3;
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = nl.permanentmarkers.hosts;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.dirk-froehling.hosts";
 				PRODUCT_NAME = Hosts;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRIP_INSTALLED_PRODUCT = YES;
@@ -651,19 +683,20 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEPLOYMENT_POSTPROCESSING = YES;
+				DEPLOYMENT_POSTPROCESSING = NO;
 				DEVELOPMENT_TEAM = PZV4XW8XL7;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = Hosts_Prefix.pch;
 				HEADER_SEARCH_PATHS = $SRCROOT;
 				INFOPLIST_FILE = "Hosts-Info.plist";
-				INSTALL_PATH = "$(HOME)/Applications";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MARKETING_VERSION = 1.4.3;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = nl.permanentmarkers.hosts;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.dirk-froehling.hosts";
 				PRODUCT_NAME = Hosts;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRIP_INSTALLED_PRODUCT = YES;
@@ -673,7 +706,9 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -692,11 +727,17 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CURRENT_PROJECT_VERSION = 0.1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -713,7 +754,9 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -732,6 +775,8 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CURRENT_PROJECT_VERSION = 0.1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -742,6 +787,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -751,9 +797,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ACTION = release;
-				BISON_PATH = /opt/local/bin/bison;
+				BISON_PATH = /usr/local/opt/bison/bin/bison;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				PRODUCT_NAME = parser;
@@ -764,7 +811,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ACTION = release;
-				BISON_PATH = /opt/local/bin/bison;
+				BISON_PATH = /usr/local/opt/bison/bin/bison;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -780,12 +827,17 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = W8E6G8GZYW;
+				CURRENT_PROJECT_VERSION = 6;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = PZV4XW8XL7;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HostsPrefpane/HostsPrefpane-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -793,7 +845,8 @@
 				INFOPLIST_FILE = "HostsPrefpane/HostsPrefpane-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_BUNDLE_IDENTIFIER = nl.permanentmarkers.hosts;
+				MARKETING_VERSION = 1.4.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.dirk-froehling.hosts";
 				PRODUCT_NAME = Hosts;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
@@ -808,6 +861,7 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 6;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = W8E6G8GZYW;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -819,8 +873,9 @@
 				INFOPLIST_FILE = "HostsPrefpane/HostsPrefpane-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MARKETING_VERSION = 1.4.3;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = nl.permanentmarkers.hosts;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.dirk-froehling.hosts";
 				PRODUCT_NAME = Hosts;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;

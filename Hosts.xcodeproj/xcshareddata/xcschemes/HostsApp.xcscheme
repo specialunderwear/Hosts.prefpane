@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DAC1105B13A4A75D0078E3B5"
-               BuildableName = "Hosts.prefPane"
-               BlueprintName = "HostsPrefpane"
+               BlueprintIdentifier = "8D1107260486CEB800E47090"
+               BuildableName = "Hosts.app"
+               BlueprintName = "HostsApp"
                ReferencedContainer = "container:Hosts.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,8 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -42,17 +40,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DAC1105B13A4A75D0078E3B5"
-            BuildableName = "Hosts.prefPane"
-            BlueprintName = "HostsPrefpane"
+            BlueprintIdentifier = "8D1107260486CEB800E47090"
+            BuildableName = "Hosts.app"
+            BlueprintName = "HostsApp"
             ReferencedContainer = "container:Hosts.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -60,15 +57,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DAC1105B13A4A75D0078E3B5"
-            BuildableName = "Hosts.prefPane"
-            BlueprintName = "HostsPrefpane"
+            BlueprintIdentifier = "8D1107260486CEB800E47090"
+            BuildableName = "Hosts.app"
+            BlueprintName = "HostsApp"
             ReferencedContainer = "container:Hosts.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

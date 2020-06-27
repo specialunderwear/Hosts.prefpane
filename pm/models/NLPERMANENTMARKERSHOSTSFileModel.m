@@ -68,12 +68,10 @@ NSMutableArray * NLPERMANENTMARKERSHOSTShostsEntries;
     if (undoManager != nil) {
         [[undoManager prepareWithInvocationTarget:self] removeObjectFromHostsAtIndex:index];
         if ([undoManager isUndoing]) {
-            NSString * undoActionName = NSLocalizedStringFromTable(@"Delete host entry", @"HostsAppDelegate",
-                                                                   @"undo: redo insert");
+            NSString * undoActionName = NSLocalizedString(@"Delete host entry", @"undo: redo insert");
             [undoManager setActionName:undoActionName];
         } else {
-            NSString * undoActionName = NSLocalizedStringFromTable(@"Insert host entry", @"HostsAppDelegate",
-                                                                   @"undo: undo delete");
+            NSString * undoActionName = NSLocalizedString(@"Insert host entry", @"undo: undo delete");
             [undoManager setActionName:undoActionName];
         }
     }
@@ -85,12 +83,10 @@ NSMutableArray * NLPERMANENTMARKERSHOSTShostsEntries;
         [undoManager removeAllActionsWithTarget:deletedObject];
         [[undoManager prepareWithInvocationTarget:self] insertObject:deletedObject inHostsAtIndex:index];
         if ([undoManager isUndoing]) {
-            NSString * undoActionName = NSLocalizedStringFromTable(@"Insert host entry", @"HostsAppDelegate",
-                                                                   @"undo: redo delete");
+            NSString * undoActionName = NSLocalizedString(@"Insert host entry", @"undo: redo delete");
             [undoManager setActionName:undoActionName];
         } else {
-            NSString * undoActionName = NSLocalizedStringFromTable(@"Delete host entry", @"HostsAppDelegate",
-                                                                   @"undo: undo insert");
+            NSString * undoActionName = NSLocalizedString(@"Delete host entry", @"undo: undo insert");
             [undoManager setActionName:undoActionName];        
         }
     }

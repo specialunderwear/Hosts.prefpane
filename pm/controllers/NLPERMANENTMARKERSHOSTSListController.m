@@ -27,7 +27,7 @@
 //@synthesize tableView;
 
 - (id) initWithCoder:(NSCoder *)aDecoder {
-    [super initWithCoder:aDecoder];
+    self = [super initWithCoder:aDecoder];
     
     // filter default rules, comments and empty lines.
     self.clearsFilterPredicateOnInsertion = NO;
@@ -58,14 +58,11 @@
     NSUInteger at_index = [self selectionIndex];
     NLPERMANENTMARKERSHOSTSHostEntry *entry = [[self arrangedObjects] objectAtIndex:at_index];
     
-    NSString *title = NSLocalizedStringFromTable(@"Confirm deletion", @"PMHostListController",
-                                                 @"deletion: title");
-    NSString *description = NSLocalizedStringFromTable(
-            @"Are you sure you want to permanently remove:\n%@ from /etc/hosts?",
-                                                       @"PMHostListController",
-                                                       @"deletion: message format string");
+    NSString *title = NSLocalizedString(@"Confirm deletion", @"deletion: title");
+    NSString *description = NSLocalizedString(
+            @"Are you sure you want to permanently remove:\n%@ from /etc/hosts?", @"deletion: message format string");
     description = [NSString stringWithFormat:description, [entry toString]];
-    NSAlert *alert = [NSAlert alertWithMessageText:title defaultButton:@"Yes" alternateButton:@"No" otherButton:nil informativeTextWithFormat:@"%@", description];
+    NSAlert *alert = [NSAlert alertWithMessageText:title defaultButton:NSLocalizedString(@"Yes", nil) alternateButton:NSLocalizedString(@"No", nil) otherButton:nil informativeTextWithFormat:@"%@", description];
     [alert beginSheetModalForWindow:[[NSApplication sharedApplication] mainWindow] modalDelegate:self didEndSelector:@selector(alertEnded:code:context:) contextInfo:NULL];
 }
 
