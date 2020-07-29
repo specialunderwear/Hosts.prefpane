@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16097" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,7 +19,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="176" y="715" width="668" height="512"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
             <value key="minSize" type="size" width="224.66399999999999" height="10"/>
             <view key="contentView" id="6">
                 <rect key="frame" x="0.0" y="0.0" width="668" height="512"/>
@@ -28,7 +28,7 @@
                     <box fixedFrame="YES" borderType="line" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="106">
                         <rect key="frame" x="17" y="68" width="634" height="426"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <view key="contentView" id="vdq-rp-dDr">
+                        <view key="contentView" ambiguous="YES" id="vdq-rp-dDr">
                             <rect key="frame" x="3" y="3" width="628" height="420"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
@@ -80,19 +80,20 @@
                                 <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3a-HN-b91">
                                     <rect key="frame" x="18" y="34" width="593" height="370"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <clipView key="contentView" id="Uqm-mI-luT">
+                                    <clipView key="contentView" ambiguous="YES" id="Uqm-mI-luT">
                                         <rect key="frame" x="1" y="0.0" width="591" height="369"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
-                                            <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="vbL-m5-SBH" id="lCc-S7-Y57">
+                                            <tableView verticalHuggingPriority="750" ambiguous="YES" allowsExpansionToolTips="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="vbL-m5-SBH" id="lCc-S7-Y57">
                                                 <rect key="frame" x="0.0" y="0.0" width="591" height="344"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <size key="intercellSpacing" width="3" height="2"/>
                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                                 <tableColumns>
-                                                    <tableColumn width="52" minWidth="40" maxWidth="1000" id="PJ8-A3-VaR">
+                                                    <tableColumn width="52.5" minWidth="40" maxWidth="1000" id="PJ8-A3-VaR">
                                                         <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Use">
+                                                            <font key="font" metaFont="smallSystem"/>
                                                             <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                             <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                         </tableHeaderCell>
@@ -106,8 +107,9 @@
                                                             <binding destination="102" name="enabled" keyPath="authenticated" id="uyG-4I-zRZ"/>
                                                         </connections>
                                                     </tableColumn>
-                                                    <tableColumn width="299.5" minWidth="40" maxWidth="1000" id="2cX-DG-ekV">
+                                                    <tableColumn width="300" minWidth="40" maxWidth="1000" id="2cX-DG-ekV">
                                                         <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="IP Address">
+                                                            <font key="font" metaFont="smallSystem"/>
                                                             <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                             <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                         </tableHeaderCell>
@@ -118,16 +120,17 @@
                                                         </textFieldCell>
                                                         <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                         <connections>
-                                                            <binding destination="102" name="enabled" keyPath="authenticated" id="Zlb-m3-jvd"/>
                                                             <binding destination="99" name="value" keyPath="arrangedObjects.address" id="soD-tL-BWc">
                                                                 <dictionary key="options">
                                                                     <bool key="NSValidatesImmediately" value="YES"/>
                                                                 </dictionary>
                                                             </binding>
+                                                            <binding destination="102" name="enabled" keyPath="authenticated" id="Zlb-m3-jvd"/>
                                                         </connections>
                                                     </tableColumn>
                                                     <tableColumn width="229.5" minWidth="10" maxWidth="3.4028234663852886e+38" id="h3b-vn-bLp">
                                                         <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Hostname">
+                                                            <font key="font" metaFont="smallSystem"/>
                                                             <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </tableHeaderCell>
@@ -138,12 +141,12 @@
                                                         </textFieldCell>
                                                         <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                         <connections>
-                                                            <binding destination="102" name="enabled" keyPath="authenticated" id="BEe-06-4bW"/>
                                                             <binding destination="99" name="value" keyPath="arrangedObjects.hostnames" id="hFJ-nX-1fq">
                                                                 <dictionary key="options">
                                                                     <bool key="NSValidatesImmediately" value="YES"/>
                                                                 </dictionary>
                                                             </binding>
+                                                            <binding destination="102" name="enabled" keyPath="authenticated" id="BEe-06-4bW"/>
                                                         </connections>
                                                     </tableColumn>
                                                 </tableColumns>
