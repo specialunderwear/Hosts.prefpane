@@ -91,7 +91,7 @@
                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                                 <tableColumns>
-                                                    <tableColumn width="52" minWidth="40" maxWidth="1000" id="PJ8-A3-VaR">
+                                                    <tableColumn width="52.5" minWidth="40" maxWidth="1000" id="PJ8-A3-VaR">
                                                         <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Use">
                                                             <font key="font" metaFont="smallSystem"/>
                                                             <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -107,7 +107,7 @@
                                                             <binding destination="102" name="enabled" keyPath="authenticated" id="uyG-4I-zRZ"/>
                                                         </connections>
                                                     </tableColumn>
-                                                    <tableColumn width="300.5" minWidth="40" maxWidth="1000" id="2cX-DG-ekV">
+                                                    <tableColumn width="300" minWidth="40" maxWidth="1000" id="2cX-DG-ekV">
                                                         <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="IP Address">
                                                             <font key="font" metaFont="smallSystem"/>
                                                             <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -120,7 +120,11 @@
                                                         </textFieldCell>
                                                         <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                         <connections>
-                                                            <binding destination="99" name="value" keyPath="arrangedObjects.address" id="LWj-EQ-T5L"/>
+                                                            <binding destination="99" name="value" keyPath="arrangedObjects.address" id="soD-tL-BWc">
+                                                                <dictionary key="options">
+                                                                    <bool key="NSValidatesImmediately" value="YES"/>
+                                                                </dictionary>
+                                                            </binding>
                                                             <binding destination="102" name="enabled" keyPath="authenticated" id="Zlb-m3-jvd"/>
                                                         </connections>
                                                     </tableColumn>
@@ -137,7 +141,11 @@
                                                         </textFieldCell>
                                                         <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                         <connections>
-                                                            <binding destination="99" name="value" keyPath="arrangedObjects.hostnames" id="BWN-AI-Ova"/>
+                                                            <binding destination="99" name="value" keyPath="arrangedObjects.hostnames" id="hFJ-nX-1fq">
+                                                                <dictionary key="options">
+                                                                    <bool key="NSValidatesImmediately" value="YES"/>
+                                                                </dictionary>
+                                                            </binding>
                                                             <binding destination="102" name="enabled" keyPath="authenticated" id="BEe-06-4bW"/>
                                                         </connections>
                                                     </tableColumn>
@@ -150,7 +158,7 @@
                                         </subviews>
                                     </clipView>
                                     <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="k4L-0E-amu">
-                                        <rect key="frame" x="1" y="354" width="591" height="15"/>
+                                        <rect key="frame" x="1" y="336" width="581" height="16"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </scroller>
                                     <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="kyz-xf-jqH">

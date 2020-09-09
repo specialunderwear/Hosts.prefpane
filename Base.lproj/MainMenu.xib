@@ -250,7 +250,11 @@
                                                         </textFieldCell>
                                                         <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                         <connections>
-                                                            <binding destination="572" name="value" keyPath="arrangedObjects.address" id="Smp-tC-3HS"/>
+                                                            <binding destination="572" name="value" keyPath="arrangedObjects.address" id="8zC-SE-WcV">
+                                                                <dictionary key="options">
+                                                                    <bool key="NSValidatesImmediately" value="YES"/>
+                                                                </dictionary>
+                                                            </binding>
                                                             <binding destination="715" name="enabled" keyPath="authenticated" id="aCp-mj-vJv"/>
                                                         </connections>
                                                     </tableColumn>
@@ -267,7 +271,11 @@
                                                         </textFieldCell>
                                                         <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                         <connections>
-                                                            <binding destination="572" name="value" keyPath="arrangedObjects.hostnames" id="ow6-tU-bhH"/>
+                                                            <binding destination="572" name="value" keyPath="arrangedObjects.hostnames" id="DkW-Oz-Ukx">
+                                                                <dictionary key="options">
+                                                                    <bool key="NSValidatesImmediately" value="YES"/>
+                                                                </dictionary>
+                                                            </binding>
                                                             <binding destination="715" name="enabled" keyPath="authenticated" id="1F6-JH-GZI"/>
                                                         </connections>
                                                     </tableColumn>
@@ -280,7 +288,7 @@
                                         </subviews>
                                     </clipView>
                                     <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="QaE-Fa-w9m">
-                                        <rect key="frame" x="1" y="207" width="591" height="16"/>
+                                        <rect key="frame" x="1" y="196" width="581" height="16"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </scroller>
                                     <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="FOT-ni-igH">
