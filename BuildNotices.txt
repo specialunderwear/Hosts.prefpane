@@ -25,19 +25,19 @@ Sign the pane:
 codesign -v -f -s "Developer ID Application: Your Name (ABCDEFG1234)" Hosts.prefPane
 
 Build Package (pane in folder "build"):
-pkgbuild --root build --identifier "nl.your-domain.hosts" --version "1.4.4" --install-location "/Library/PreferencePanes" --sign "Developer ID Installer: Your Name (ABCDEFG1234)" Hosts-PrefPane-1.4.4.pkg
+pkgbuild --root build --identifier "nl.your-domain.hosts" --version "1.4.5" --install-location "/Library/PreferencePanes" --sign "Developer ID Installer: Your Name (ABCDEFG1234)" Hosts-PrefPane-1.4.5.pkg
 
 To certify the installer, you need your ProviderShortname. For this, you have to give altool its app-specific password:
 xcrun altool --list-providers -u "your.name@your-domain.nl" -p "@keychain:Developer-altool"
 
 Certify package:
-xcrun altool --notarize-app --primary-bundle-id "nl.your-domain.hosts" --username "your.name@your-domain.nl" --password "@keychain:Developer-altool" --asc-provider "YourName123456" --file "Hosts-PrefPane-1.4.4.pkg"
+xcrun altool --notarize-app --primary-bundle-id "nl.your-domain.hosts" --username "your.name@your-domain.nl" --password "@keychain:Developer-altool" --asc-provider "YourName123456" --file "Hosts-PrefPane-1.4.5.pkg"
 
 Wait, check status:
 xcrun altool --notarization-info "YourRequestUUID" --username "your.name@your-domain.nl" --password "@keychain:Developer-altool"
 
 Staple notarization ticket to package for offline installation:
-xcrun stapler staple Hosts-PrefPane-1.4.4.pkg
+xcrun stapler staple Hosts-PrefPane-1.4.5.pkg
 
 
 Issue with Check Box disabling:
