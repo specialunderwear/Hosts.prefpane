@@ -77,7 +77,7 @@
     }
     NSLog(@"old value %@", oldValue);
     [[undoManager prepareWithInvocationTarget:self] setValue:oldValue forKeyPath:keyPath];
-    NSString * undoActionName = NSLocalizedString(@"Edit", @"undo: undo edit");
+    NSString * undoActionName = NSLocalizedStringUniversal(@"Edit", @"undo: undo edit");
     [undoManager setActionName:undoActionName];
 
 }
@@ -101,7 +101,7 @@
     } else {
         NSLog(@"is not an ip");
         if (outError != NULL) {
-            NSString * errorStr = NSLocalizedString(@"Please enter a valid ip address", @"validation: valid ip address");
+            NSString * errorStr = NSLocalizedStringUniversal(@"Please enter a valid ip address", @"validation: valid ip address");
             NSDictionary * userInfoDict = [NSDictionary dictionaryWithObject:errorStr
                                                                       forKey:NSLocalizedDescriptionKey];
             NSError *error = [NSError errorWithDomain:PM_HOST_ENTRY_ERROR_DOMAIN
@@ -130,7 +130,7 @@
         return YES;
     } else {
         if (outError != NULL) {
-            NSString * errorStr = NSLocalizedString(@"Please enter a valid hostname",
+            NSString * errorStr = NSLocalizedStringUniversal(@"Please enter a valid hostname",
                                                              @"validation: valid hostname");
             NSDictionary * userInfoDict = [NSDictionary dictionaryWithObject:errorStr
                                                                       forKey:NSLocalizedDescriptionKey];

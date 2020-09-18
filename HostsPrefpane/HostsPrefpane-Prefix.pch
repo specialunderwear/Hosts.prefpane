@@ -5,3 +5,8 @@
 #ifdef __OBJC__
     #import <Cocoa/Cocoa.h>
 #endif
+
+// In case we run the Hosts code as a Pref Pane, NSLocalizedString does not help
+#define NSLocalizedStringUniversal(key, comment) \
+[[NSBundle bundleForClass: [self class]] localizedStringForKey:(key) value:@"" table:nil]
+
