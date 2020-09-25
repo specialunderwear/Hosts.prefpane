@@ -68,10 +68,10 @@ NSMutableArray * NLPERMANENTMARKERSHOSTShostsEntries;
     if (undoManager != nil) {
         [[undoManager prepareWithInvocationTarget:self] removeObjectFromHostsAtIndex:index];
         if ([undoManager isUndoing]) {
-            NSString * undoActionName = NSLocalizedStringUniversal(@"Delete host entry", @"undo: redo insert");
+            NSString * undoActionName = [[NSBundle bundleForClass: [self class]] localizedStringForKey:@"Delete host entry" value:@"" table:nil];
             [undoManager setActionName:undoActionName];
         } else {
-            NSString * undoActionName = NSLocalizedStringUniversal(@"Insert host entry", @"undo: undo delete");
+            NSString * undoActionName = [[NSBundle bundleForClass: [self class]] localizedStringForKey:@"Insert host entry" value:@"" table:nil];
             [undoManager setActionName:undoActionName];
         }
     }
@@ -83,10 +83,10 @@ NSMutableArray * NLPERMANENTMARKERSHOSTShostsEntries;
         [undoManager removeAllActionsWithTarget:deletedObject];
         [[undoManager prepareWithInvocationTarget:self] insertObject:deletedObject inHostsAtIndex:index];
         if ([undoManager isUndoing]) {
-            NSString * undoActionName = NSLocalizedStringUniversal(@"Insert host entry", @"undo: redo delete");
+            NSString * undoActionName = [[NSBundle bundleForClass: [self class]] localizedStringForKey:@"Insert host entry" value:@"" table:nil];
             [undoManager setActionName:undoActionName];
         } else {
-            NSString * undoActionName = NSLocalizedStringUniversal(@"Delete host entry", @"undo: undo insert");
+            NSString * undoActionName = [[NSBundle bundleForClass: [self class]] localizedStringForKey:@"Delete host entry" value:@"" table:nil];
             [undoManager setActionName:undoActionName];        
         }
     }

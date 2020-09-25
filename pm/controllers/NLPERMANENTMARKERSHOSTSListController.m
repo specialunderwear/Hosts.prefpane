@@ -58,11 +58,14 @@
     NSUInteger at_index = [self selectionIndex];
     NLPERMANENTMARKERSHOSTSHostEntry *entry = [[self arrangedObjects] objectAtIndex:at_index];
     
-    NSString *title = NSLocalizedStringUniversal(@"Confirm deletion", @"deletion: title");
-    NSString *description = NSLocalizedStringUniversal(
-            @"Are you sure you want to permanently remove:\n%@ from /etc/hosts?", @"deletion: message format string");
+    NSString *title = [[NSBundle bundleForClass: [self class]] localizedStringForKey:@"Confirm deletion" value:@"" table:nil];
+    NSString *description = [[NSBundle bundleForClass: [self class]] localizedStringForKey:@"Are you sure you want to permanently remove:\n%@ from /etc/hosts?" value:@"" table:nil];
     description = [NSString stringWithFormat:description, [entry toString]];
-    NSAlert *alert = [NSAlert alertWithMessageText:title defaultButton:NSLocalizedStringUniversal(@"Yes", nil) alternateButton:NSLocalizedStringUniversal(@"No", nil) otherButton:nil informativeTextWithFormat:@"%@", description];
+    NSAlert *alert = [NSAlert alertWithMessageText:title
+                                     defaultButton:[[NSBundle bundleForClass: [self class]] localizedStringForKey:@"Yes" value:@"" table:nil]
+                                   alternateButton:[[NSBundle bundleForClass: [self class]] localizedStringForKey:@"No" value:@"" table:nil]
+                                       otherButton:nil
+                         informativeTextWithFormat:@"%@", description];
     [alert beginSheetModalForWindow:[[NSApplication sharedApplication] mainWindow] modalDelegate:self didEndSelector:@selector(alertEnded:code:context:) contextInfo:NULL];
 }
 
