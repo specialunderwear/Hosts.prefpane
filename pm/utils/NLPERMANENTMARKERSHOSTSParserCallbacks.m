@@ -20,6 +20,17 @@
 #import "pm/utils/NLPERMANENTMARKERSHOSTSParserCallbacks.h"
 #import "pm/models/NLPERMANENTMARKERSHOSTSHostEntry.h"
 
+
+// We need a class here to find the NSBundle for string localization.
+// In case we run this as a Pref Pane, NSLocalizedString does not help, and since the
+// strings are needed outside a class, we just declare one here.
+@interface LocalizationSupportClass: NSObject
+@end
+
+@implementation LocalizationSupportClass
+@end
+
+
 // defined in NLPERMANENTMARKERSHOSTSFileModel.m
 extern NSMutableArray * NLPERMANENTMARKERSHOSTShostsEntries;
 
@@ -33,13 +44,24 @@ void NLPERMANENTMARKERSHOSTSonHostEntryFound(NLPERMANENTMARKERSHOSTS_CHostEntry 
 
 // error handler for the hosts file parser
 void NLPERMANENTMARKERSHOSTSonHostsParseError(NLPERMANENTMARKERSHOSTS_CHostEntryError * error) {
-    NSString *windowTitle = NSLocalizedString(@"Parse error", @"error: title");
-    NSString *errorFormatString = NSLocalizedString(@"In /private/etc/hosts on line:%i %s\n\n%s\n\nShould this line be permanently removed from /private/etc/hosts?\nChoose no to quit Hosts and manually correct the error.",
-                                                             @"error: description");
+    LocalizationSupportClass *foo = [[LocalizationSupportClass alloc] init];
+    NSBundle *myBundle = [NSBundle bundleForClass:[foo class]];
+
+    NSString *windowTitle = [myBundle localizedStringForKey:@"Parse error" value:@"" table:nil];
+    NSString *errorFormatString = [myBundle localizedStringForKey:@"In /private/etc/hosts on line:%i %s\n\n%s\n\nShould this line be permanently removed from /private/etc/hosts?\nChoose no to quit Hosts and manually correct the error."
+                                                            value:@""
+                                                            table:nil];
+
     NSString *errorString = [NSString stringWithFormat:errorFormatString, error->linenumber, error->token, error->error];
     
-    NSInteger choice = NSRunAlertPanel(windowTitle, @"%@", errorString, NSLocalizedString(@"No", nil), nil, NSLocalizedString(@"Yes", nil));
-    if (choice == NSAlertDefaultReturn) {
+    NSAlert *alert = [NSAlert
+                      alertWithMessageText:windowTitle
+                      defaultButton:[myBundle localizedStringForKey:@"Yes" value:@"" table:nil]
+                      alternateButton:[myBundle localizedStringForKey:@"No" value:@"" table:nil]
+                      otherButton:nil
+                      informativeTextWithFormat:@"%@", errorString];
+
+    if ([alert runModal] == NSModalResponseCancel) {
         [[NSApplication sharedApplication] terminate:nil];
     }
 }

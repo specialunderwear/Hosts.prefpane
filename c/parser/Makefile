@@ -30,16 +30,16 @@ ifneq ($(BISON_VERSION_GT_2_5), 1)
 endif
 
 all: .PHONY libs
-	gcc -o hosts -g main.c hostsparser.o
+	gcc -Wno-implicit-function-declaration -o hosts -g main.c hostsparser.o
 
 libs: .PHONY
 	$(BISON_PATH) -d hostsparser.y
 	flex --header-file=hostsscanner.h hostsparser.yy
 	$(BISON_PATH) --report=state hostsparser.y
-	cc -c -g hosts.c lex.NLPERMANENTMARKERSHOSTS.c hostsparser.tab.c
+	cc -Wno-implicit-function-declaration -c -g hosts.c lex.NLPERMANENTMARKERSHOSTS.c hostsparser.tab.c
 	ld -r hosts.o lex.NLPERMANENTMARKERSHOSTS.o hostsparser.tab.o -o hostsparser.o
 release: clean libs
-	gcc -O3 -o hosts main.c hostsparser.o
+	gcc -Wno-implicit-function-declaration -O3 -o hosts main.c hostsparser.o
 	strip hosts
 
 clean:
